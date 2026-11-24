@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4efe3" />
+  <meta name="description" content="SI A 25 — The Last Chapter. Sebuah arsip kecil tentang perjalanan Pemrograman Antarmuka Pengguna." />
+  <title>SI A 25 — The Last Chapter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="config.js" defer></script>
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="site" class="site">
+    <header class="topbar">
+      <a class="wordmark" href="#top" aria-label="SI A 25 home"><span>SI A <b>25</b></span></a>
+      <div class="topbar-center"><span class="topbar-course">PEMROGRAMAN ANTARMUKA PENGGUNA</span><span class="topbar-divider"></span><span id="scene-counter">01 / 09</span></div>
+      <div class="topbar-actions">
+        <button id="music-toggle" class="icon-button" type="button" aria-label="Putar musik" title="Musik"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="music-label">MUSIC OFF</span></button>
+        <label class="volume-control" title="Atur volume musik">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4zm12.5 2a4.5 4.5 0 0 0-2.5-4.03v8.05a4.5 4.5 0 0 0 2.5-4.02zM14 3.23v2.06a7 7 0 0 1 0 13.42v2.06a9 9 0 0 0 0-17.54z"/></svg>
+          <input id="music-volume" type="range" min="0" max="100" value="35" aria-label="Volume musik" />
+          <output id="music-volume-value" for="music-volume">35%</output>
+        </label>
+        <button id="logout-button" class="text-button" type="button">Keluar</button>
+      </div>
+    </header>
+
+    <div class="progress-track"><span id="progress-fill"></span></div>
+
+    <main class="story-shell" id="story-shell" tabindex="-1">
+      <section class="scene scene-cover is-active" data-scene="0" data-track="opening" aria-label="Opening">
+        <div class="cover-side-note">AN UNEXPECTED ASSIGNMENT<br/>A VERY GOOD ACCIDENT</div>
+        <div class="cover-art" aria-hidden="true">
+          <div class="cover-art-label"><span>FIG. 01</span><span>ONE CLASS, MANY STORIES</span></div>
+          <div class="cover-art-poster">
+            <svg viewBox="0 0 560 560" role="presentation">
+              <defs>
+                <linearGradient id="classroom-sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8e4d6"/><stop offset="1" stop-color="#f1d8ad"/></linearGradient>
+                <clipPath id="poster-clip"><rect x="20" y="20" width="520" height="520" rx="4"/></clipPath>
+              </defs>
+              <g clip-path="url(#poster-clip)">
+                <rect x="20" y="20" width="520" height="520" fill="url(#classroom-sky)"/>
+                <circle cx="421" cy="126" r="55" fill="#e7b96f"/>
+                <path d="M20 330 Q148 258 266 330 T540 294 V540 H20Z" fill="#91a88d"/>
+                <path d="M20 390 Q180 326 307 389 T540 365 V540 H20Z" fill="#54785c"/>
+                <path d="M116 296 V173 Q116 158 132 158 H393 Q409 158 409 173 V318" fill="#f8f0df" stroke="#294837" stroke-width="5"/>
+                <path d="M101 161 263 87 424 161Z" fill="#ad513c" stroke="#294837" stroke-width="5" stroke-linejoin="round"/>
+                <rect x="148" y="190" width="62" height="68" fill="#d7e0d2" stroke="#294837" stroke-width="4"/>
+                <rect x="236" y="190" width="62" height="68" fill="#d7e0d2" stroke="#294837" stroke-width="4"/>
+                <rect x="324" y="190" width="49" height="128" fill="#d9ad6b" stroke="#294837" stroke-width="4"/>
+                <path d="M179 190V258M236 224H298M148 224H210M267 190V258" stroke="#294837" stroke-width="3"/>
+                <path d="M68 390h423" stroke="#294837" stroke-width="5" stroke-linecap="round"/>
+                <path d="M104 390v71m346-71v71M81 461h390" stroke="#294837" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="197" cy="350" r="21" fill="#c87953"/>
+                <path d="M164 390q8-27 33-27t34 27v36h-67z" fill="#f3d6a6" stroke="#294837" stroke-width="4"/>
+                <circle cx="284" cy="341" r="21" fill="#344d45"/>
+                <path d="M251 382q8-27 33-27t34 27v44h-67z" fill="#d9a358" stroke="#294837" stroke-width="4"/>
+                <circle cx="369" cy="350" r="20" fill="#d79b70"/>
+                <path d="M337 390q8-27 32-27t33 27v36h-65z" fill="#b7c7ac" stroke="#294837" stroke-width="4"/>
+                <path d="M225 381h46v31h-46z" fill="#fffaf0" stroke="#294837" stroke-width="3" transform="rotate(-7 225 381)"/>
+                <path d="M261 389h24" stroke="#ad513c" stroke-width="3"/>
+                <path d="M79 333q-12-27 7-41 7 23 0 42M83 337q9-25 31-23-11 23-30 27" fill="#6e8b64" stroke="#294837" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M447 331q-12-27 7-41 7 23 0 42M451 335q9-25 31-23-11 23-30 27" fill="#6e8b64" stroke="#294837" stroke-width="3" stroke-linejoin="round"/>
+              </g>
+              <rect x="20" y="20" width="520" height="520" rx="4" fill="none" stroke="#294837" stroke-width="5"/>
+            </svg>
+            <span class="art-sticker art-sticker-date">SEMESTER<br/>2025</span>
+            <span class="art-sticker art-sticker-people">47<br/><small>ORANG</small></span>
+          </div>
+          <div class="cover-art-caption"><span class="caption-rule"></span><span>Meja yang sama.<br/><em>Cerita yang beda-beda.</em></span><span class="caption-mark">SI A / 25</span></div>
+        </div>
+        <div class="cover-main">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SEBUAH CERITA TENTANG KITA</p>
+          <h1>SI A <span>25</span></h1>
+          <p class="cover-title">The Last Chapter<span class="period">.</span></p>
+          <div class="cover-rule"></div>
+          <p class="cover-desc">Bukan tentang akhir dari semuanya.<br/>Tapi tentang semua hal yang pernah terjadi di antaranya.</p>
+          <button class="button button-primary" data-next type="button">Buka cerita <span aria-hidden="true">↓</span></button>
+        </div>
+        <div class="cover-footer"><span>01 — AN OPENING NOTE</span><span>SCROLL IS OVERRATED. LET'S TURN THE PAGE.</span></div>
+        <div class="cover-index" aria-hidden="true">25</div>
+      </section>
+
+      <section class="scene scene-beginning" data-scene="1" data-track="story" aria-label="The unexpected beginning" hidden>
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 01 <span class="eyebrow-line"></span> THE BEGINNING</p>
+          <h2>Salah input?<br/><em>Atau ketuker?</em></h2>
+          <p class="scene-intro">Waktu pembagian kelas keluar, kami belum yakin ini benar. Chat pun berubah jadi sesi tebak-tebakan: kami sebenarnya mendaftar mata kuliah apa?</p>
+        </div>
+        <aside class="reunion-art" aria-label="Ringkasan obrolan saat hasil pembagian kelas keluar">
+          <div class="reunion-art-head"><span>CHAT ASLI · FRANCESCO × CATHRINE</span><span>14:55—15:09</span></div>
+          <div class="chat-collage" aria-label="Tiga foto percakapan">
+            <button class="chat-photo chat-photo-main" type="button" data-chat-photo="0" aria-label="Lihat foto chat pertama ukuran penuh">
+              <img src="assets/image/chatwa1.jpeg" alt="Chat saat pertama melihat nama Pemrograman Antarmuka Pengguna" />
+              <span class="chat-photo-caption"><b>01</b> “tf is pemograman antar muka pengguna”</span>
+            </button>
+            <button class="chat-photo chat-photo-second" type="button" data-chat-photo="1" aria-label="Lihat foto chat kedua ukuran penuh">
+              <img src="assets/image/chatwa2.jpeg" alt="Lanjutan chat saat mencoba menebak kelas yang didapat" />
+              <span class="chat-photo-caption"><b>02</b> Coba cocokkan lagi</span>
+            </button>
+            <button class="chat-photo chat-photo-third" type="button" data-chat-photo="2" aria-label="Lihat foto chat ketiga ukuran penuh">
+              <img src="assets/image/chatwa3.jpeg" alt="Chat saat membandingkan mata kuliah yang didaftarkan" />
+              <span class="chat-photo-caption"><b>03</b> Daftar mata kuliah</span>
+            </button>
+          </div>
+          <div class="reunion-art-caption"><strong>Ketuk fotonya</strong><span>buat lihat chat lebih jelas.</span></div>
+        </aside>
+        <div class="story-copy two-column-copy">
+          <p>Nama <strong>Pemrograman Antarmuka Pengguna</strong> terasa asing karena yang kami ingat, kami mendaftar untuk mengajar <strong>Front-End Programming</strong>. Reaksi pertama: mungkin ada yang salah input.</p>
+          <p>Di chat, tebakan kami berubah-ubah—salah input, tertukar, atau dipindahkan ke kelas lain. Kami saling tanya lagi mata kuliah apa saja yang kami pilih, sambil mencoba memahami pembagian yang baru keluar.</p>
+          <p>Lalu muncul kejutan berikutnya: kelasnya <strong>SI A 25.</strong> Francesco sudah pernah mengajar mereka. Buat Cathrine, ini pertemuan pertama.</p>
+          <p>Waktu itu kami belum tahu bahwa kelas yang kami dapat secara tak terduga ini akan menjadi bagian dari semester terakhir kami sebagai asisten dosen.</p>
+        </div>
+        <div class="scene-footnote"><span>FRANCESCO × CATHRINE</span><span>AN UNEXPECTED REUNION</span></div>
+      </section>
+
+      <section class="scene scene-classroom" data-scene="2" data-track="classroom" aria-label="The class" hidden>
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 02 <span class="eyebrow-line"></span> SI A, APA ADANYA</p>
+          <h2>Nggak pernah<br/><em>benar-benar sepi.</em></h2>
+          <p class="scene-intro">Ada yang cepat paham materi. Ada yang instalasinya makan satu sesi. Kelas ini selalu punya ritme sendiri.</p>
+        </div>
+        <div class="classroom-copy">
+          <p>Ada yang cepat paham materi. Ada yang instalasinya makan satu sesi. Ada yang selalu aktif bertanya. Ada juga yang bikin suasana kelas jadi rame dan hidup.</p>
+          <p>Dari tugas kelompok ke presentasi dan demo website, hampir selalu ada yang dikerjakan bareng. Kadang satu instalasi sederhana bisa makan hampir dua jam—dan sesi kelas keburu habis.</p>
+          <blockquote>Semua beda, tapi justru itu yang bikin SI A 25 selalu punya ritme sendiri.</blockquote>
+        </div>
+        <figure class="classroom-collage">
+          <img src="assets/image/classroom-collage.png" alt="Kolase foto suasana kelas komputer dan sketsa rancangan website di buku catatan" />
+          <figcaption>47 Orang, Satu Kelas.<span>SI A · 25</span></figcaption>
+          <span class="collage-sparkle" aria-hidden="true">✳</span>
+        </figure>
+        <div class="scene-footnote"><span>47 ORANG · BANYAK CARA BELAJAR</span><span>NGGAK PERNAH ADA PRAKTIKUM YANG SAMA</span></div>
+      </section>
+
+      <section class="scene scene-teachquest" data-scene="3" data-track="teachquest" aria-label="TeachQuest" hidden>
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 03 <span class="eyebrow-line"></span> TEACHQUEST</p>
+          <h2>Belajar, tapi<br/><em>ada quest-nya.</em></h2>
+          <p class="scene-intro">Tiga minggu pertama terasa monoton. Kami ingin suasana belajar punya sesuatu yang berbeda. Memasuki minggu keempat, kami memperkenalkan cara baru agar belajar terasa seperti permainan: TeachQuest.</p>
+        </div>
+        <figure class="quest-archive-art">
+          <img src="assets/image/teachquest-archive.png" alt="Kolase arsip fantasi dengan peta, kastil, segel lilin, dan daftar quest" />
+          <figcaption><strong>TEACHQUEST</strong><span>CLASSROOM GAMIFICATION</span></figcaption>
+          <div class="quest-checklist" aria-label="Prinsip TeachQuest"><strong>A Classroom RPG</strong><span>Choose Your Role</span><span>Earn XP</span><span>Use Skills</span><span>Complete Quests</span><span>Grow Together</span></div>
+        </figure>
+        <div class="quest-field">
+          <div class="quest-field-title"><span></span>THE CORE OF TEACHQUEST<span></span></div>
+          <div class="quest-stats" aria-label="Sistem poin TeachQuest">
+            <div><span class="stat-code xp">XP</span><b>Experience Points</b><small>Didapatkan dari berbagai aktivitas positif seperti bertanya, menjawab, atau menyelesaikan quest.</small></div>
+            <div><span class="stat-code hp">HP</span><b>Health Points</b><small>Menjadi bagian dari aturan kelas, seperti terlambat atau telat mengumpulkan tugas.</small></div>
+            <div><span class="stat-code mp">MP</span><b>Mana Points</b><small>Digunakan untuk mengaktifkan skill sesuai dengan role karakter.</small></div>
+            <div><span class="stat-code gp">GP</span><b>Gold Points</b><small>Mata uang untuk berbagai item kosmetik, seperti pet, avatar, dan background.</small></div>
+          </div>
+          <details class="quest-details">
+            <summary>More quest notes ↓</summary>
+            <div class="quest-bottom-grid">
+          <div><span class="note-index">CHARACTER ROLES</span><div class="role-list"><span>Defender</span><span>Wizard</span><span>Healer</span><span>Tinkerer</span></div></div>
+          <div><span class="note-index">WEEKLY SIDE FUN</span><p>Tebak angka, tebak dosen, sampai kompetisi rekening bank terbanyak. Ada juga daily events dan random encounters yang membuat kelas punya kejutan sendiri.</p></div>
+            </div>
+          <div class="quiet-reward"><span class="quiet-star">✦</span><p><strong>One more thing.</strong> Di awal, TeachQuest cukup sering digunakan. Seiring waktu, intensitas penggunaannya memang berkurang, tetapi bukan berarti sistemnya ditinggalkan. Sesekali reward masih diberikan diam-diam kepada mahasiswa yang melakukan sesuatu yang layak diapresiasi—termasuk melalui salah satu website yang baru-baru ini digunakan di kelas. Beberapa kejutan memang lebih seru kalau tidak diumumkan dulu.</p></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="scene scene-journey" data-scene="4" data-track="learning" aria-label="Learning journey" hidden>
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 04 <span class="eyebrow-line"></span> THE DEVELOPER JOURNEY</p>
+          <h2>Dari Satu Tag,<br/><em>ke Satu Website Utuh.</em></h2>
+          <p class="scene-intro">Perjalanan kami di Pemrograman Antarmuka Pengguna bukan cuma soal menulis kode, tapi juga memahami proses di balik terbentuknya sebuah aplikasi web.</p>
+          <blockquote class="journey-quote">Sedikit demi sedikit, satu teknologi membawa kami ke teknologi berikutnya.</blockquote>
+        </div>
+        <div class="tech-timeline">
+          <svg class="journey-route" viewBox="0 0 1000 380" preserveAspectRatio="none" aria-hidden="true"><path d="M55 100 C175 100 190 100 300 100 S430 100 485 100 S640 100 720 100 S900 100 950 145 S900 265 820 265 S670 265 585 265 S390 265 300 265 S120 265 55 265"/><g><path d="M178 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="178" cy="103" r="4"/><path d="M408 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="408" cy="103" r="4"/><path d="M795 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="795" cy="103" r="4"/><path d="M840 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="840" cy="265" r="4"/><path d="M585 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="585" cy="265" r="4"/><path d="M315 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="315" cy="265" r="4"/></g></svg>
+          <article class="tech-step"><span class="tech-no">01</span><div><h3>HTML</h3><p>Mulai menyusun struktur dan fondasi sebuah halaman web.</p></div><span class="tech-kind" data-glyph="&lt;/&gt;">STRUCTURE</span></article>
+          <article class="tech-step"><span class="tech-no">02</span><div><h3>CSS</h3><p>Mengatur tampilan, layout, dan menjadikan halaman lebih menarik.</p></div><span class="tech-kind" data-glyph="✎">STYLE</span></article>
+          <article class="tech-step"><span class="tech-no">03</span><div><h3>JavaScript</h3><p>Membuat halaman menjadi interaktif dan responsif terhadap pengguna.</p></div><span class="tech-kind" data-glyph="{ }">INTERACTION</span></article>
+          <article class="tech-step"><span class="tech-no">04</span><div><h3>Next.js</h3><p>Melangkah ke framework modern untuk membangun aplikasi web yang lebih utuh.</p></div><span class="tech-kind" data-glyph="N">FRAMEWORK</span></article>
+          <article class="tech-step"><span class="tech-no">05</span><div><h3>TypeScript</h3><p>Mengenal sistem tipe yang membantu membuat kode lebih aman dan terarah.</p></div><span class="tech-kind" data-glyph="TS">TYPE SAFETY</span></article>
+          <article class="tech-step"><span class="tech-no">06</span><div><h3>TSX</h3><p>Menggabungkan kekuatan TypeScript dengan JSX untuk membangun komponen.</p></div><span class="tech-kind" data-glyph="▱">COMPONENTS</span></article>
+        </div>
+        <div class="deploy-strip"><img class="deploy-art" src="assets/image/people-study-collage.png" alt="Laptop menampilkan baris kode di samping buku dan tanaman"/><div class="deploy-copy"><span class="deploy-kicker">AND THEN,</span><h3>Hari Deployment.</h3></div><span class="deploy-divider"></span><p>Setelah mengembangkan dan menyempurnakan aplikasi, saatnya membawa hasil kerja kita ke dunia nyata melalui proses deployment.</p><div class="deploy-stamps"><span class="vercel-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 23 21H1z"/></svg> Vercel</span><span class="github-mark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.72.54 1.46 0 1.05-.01 1.9-.01 2.16 0 .21.15.46.55.38A8.014 8.014 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg> GitHub</span></div></div>
+      </section>
+
+      <section class="scene scene-people" data-scene="5" data-track="people" aria-label="The people behind the class" hidden>
+        <div class="people-hero">
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 05 <span class="eyebrow-line"></span> THE PEOPLE BEHIND THE CLASS</p>
+          <h2>Orang-Orang di Balik<br/><em>Perjalanan Ini.</em></h2>
+          <p class="scene-intro">Sebuah kelas juga dibentuk oleh orang-orang yang hadir di dalamnya—yang mengajar, membantu, bertanya, mencoba, dan ikut meramaikan suasana.</p>
+        </div>
+        <figure class="people-art-wrap"><img class="people-hero-art" src="assets/image/people-study-collage.png" alt="Laptop, buku pemrograman, tanaman, dan secangkir kopi" /><span class="people-book-labels" aria-hidden="true"><i>HTML</i><i>CSS</i><i>JavaScript</i><i>Next.js</i><i>TypeScript</i><i>TSX</i></span></figure>
+        </div>
+        <div class="lecturer-line"><span class="lecturer-ribbon">LECTURER</span><div><h3 id="lecturer-name">Irvan Lewenusa</h3><p>Dosen Pengampu — Pemrograman Antarmuka Pengguna</p></div><span class="lecturer-cap" aria-hidden="true">⌂</span></div>
+        <div id="assistant-profiles" class="assistant-profiles"></div>
+        <details class="assistant-role-note"><summary>Behind the class</summary><p>Di kelas, peran asisten dosen bukan cuma menyampaikan materi. Ada error yang perlu dibantu cari solusinya, pertanyaan yang masuk lewat chat, instruksi praktikum yang perlu dipastikan, dan banyak hal kecil yang membuat proses belajar tetap berjalan.</p></details>
+      </section>
+
+      <section class="scene scene-rollcall" data-scene="6" data-track="rollcall" aria-label="47 names, one class" hidden>
+        <div class="rollcall-top">
+          <p class="eyebrow">CHAPTER 06 <span class="eyebrow-line"></span> THE ROLL CALL</p>
+          <h2>47 Names.<br/><em>One Class.</em></h2>
+          <p class="scene-intro">Sebelum halaman ini ditutup, mari sebut satu per satu orang yang menjadi bagian dari cerita ini.</p>
+          <img class="rollcall-art" src="assets/image/rollcall-collage.png" alt="Buku kelas, tanaman hijau, dan foto ruang komputer SI A 25" />
+          <span class="rollcall-note">SI A 25 ♡</span>
+          <div class="rollcall-controls"><span id="rollcall-status">SIAP UNTUK MULAI</span><button id="rollcall-start" class="button button-small" type="button">⤨ &nbsp; Putar Ulang <span>→</span></button><button id="rollcall-skip" class="text-button" type="button">Tampilkan Semua</button></div>
+        </div>
+        <div class="rollcall-list-wrap"><div class="rollcall-columns"><span>NIM</span><span>NAMA</span></div><div id="rollcall-list" class="rollcall-list" aria-live="polite"></div></div>
+        <div class="rollcall-end" id="rollcall-end"><span>47 / 47</span><strong>Everyone has a place in this chapter.</strong></div>
+        <div class="scene-footnote"><span>THE PEOPLE OF SI A 25</span><span>IN THE ORDER OF THEIR NIM</span></div>
+      </section>
+
+      <section class="scene scene-message-index" data-scene="7" data-track="messages" aria-label="Messages to remember" hidden>
+        <div class="scene-heading">
+          <p class="eyebrow">CHAPTER 07 <span class="eyebrow-line"></span> MESSAGES TO REMEMBER</p>
+          <h2>A few words,<br/><em>from all of us.</em></h2>
+          <p class="scene-intro">Tiga ruang kecil untuk menyimpan pesan dari para asisten dan seluruh kelas.</p>
+        </div>
+        <div class="message-chapters">
+          <article><span class="note-index">01 / A PERSONAL NOTE</span><h3>From Francesco</h3><p>Satu pesan untuk kelas yang membuat semester ini terasa berbeda.</p><span class="message-chapter-mark">F.</span></article>
+          <article><span class="note-index">02 / A PERSONAL NOTE</span><h3>From Cathrine</h3><p>Cerita dan ucapan terima kasih dari Cathrine untuk SI A 25.</p><span class="message-chapter-mark">C.</span></article>
+          <article><span class="note-index">03 / THE CLASS</span><h3>From the class</h3><p>Satu atau dua kata, lalu kesan-pesan dari seluruh kelas.</p><span class="message-chapter-mark">SI A</span></article>
+        </div>
+        <div class="scene-footnote"><span>THREE NOTES, MANY VOICES</span><span>THE STORY IS BETTER WHEN SHARED</span></div>
+      </section>
+
+      <section class="scene scene-letter scene-letter-francesco" data-scene="8" data-track="messages" aria-label="A note from Francesco" hidden>
+        <div class="letter-heading"><p class="eyebrow">CHAPTER 08 <span class="eyebrow-line"></span> FROM FRANCESCO</p><h2>Untuk SI A 25,<br/><em>dari Francesco.</em></h2><p class="scene-intro">Satu ruang untuk pesan yang ingin Francesco sampaikan langsung kepada kelas.</p></div>
+        <article class="letter-paper"><span class="letter-stamp">A NOTE FOR THE CLASS</span><div id="francesco-message" class="personal-message">Ruang untuk pesan Francesco.</div><div class="letter-signature"><span>Dengan hangat,</span><strong>Francesco Alexander</strong></div></article>
+        <div class="letter-margin-note">SATU SEMESTER<br/>YANG BERARTI</div>
+        <div class="scene-footnote"><span>FRANCESCO ALEXANDER</span><span>WITH GRATITUDE</span></div>
+      </section>
+
+      <section class="scene scene-letter scene-letter-cathrine" data-scene="9" data-track="messages" aria-label="A note from Cathrine" hidden>
+        <div class="letter-heading"><p class="eyebrow">CHAPTER 09 <span class="eyebrow-line"></span> FROM CATHRINE</p><h2>Untuk SI A 25,<br/><em>dari Cathrine.</em></h2><p class="scene-intro">Satu ruang untuk pesan dan kenangan Cathrine bersama kelas.</p></div>
+        <article class="letter-paper"><span class="letter-stamp">A NOTE FOR THE CLASS</span><div id="cathrine-message" class="personal-message">Ruang untuk pesan Cathrine.</div><div class="letter-signature"><span>Salam sayang,</span><strong>Cathrine Sandrina</strong></div></article>
+        <div class="letter-margin-note">TERIMA KASIH<br/>UNTUK CERITANYA</div>
+        <div class="scene-footnote"><span>CATHRINE SANDRINA</span><span>WITH GRATITUDE</span></div>
+      </section>
+
+      <section class="scene scene-class-messages" data-scene="10" data-track="messages" aria-label="Messages from the class" hidden>
+        <div class="class-message-heading"><p class="eyebrow">CHAPTER 10 <span class="eyebrow-line"></span> FROM THE CLASS</p><h2>SI A 25,<br/><em>in your own words.</em></h2><p class="scene-intro">Kalau harus mendeskripsikan kelas Pemrograman Antarmuka Pengguna dalam satu atau dua kata, apa yang paling kamu ingat?</p></div>
+        <aside class="class-qr-panel"><div><span class="note-index">SCAN TO ADD YOUR WORDS</span><h3>Deskripsikan kelas dalam 1–3 kata.</h3><p>Scan QR untuk kirim jawaban lewat Mentimeter Word Cloud.</p><a id="message-collection-link" class="button button-outline is-disabled" href="#" target="_blank" rel="noopener">Buka Mentimeter <span>↗</span></a></div><a id="qr-frame-link" class="qr-frame class-qr-frame" href="#" target="_blank" rel="noopener" aria-label="QR code Mentimeter untuk mengirim kata dan pesan" aria-disabled="true"><span class="qr-placeholder" id="qr-placeholder"><span class="qr-placeholder-icon">▦</span><b>QR MENTIMETER</b><small>Tempel gambar QR di config.js</small></span><img id="qr-image" alt="QR code Mentimeter untuk kelas SI A 25" hidden /></a></aside>
+        <figure class="final-photo-frame class-mentimeter-frame">
+          <div class="photo-placeholder class-mentimeter-placeholder" id="mentimeter-placeholder"><span class="photo-cross">✳</span><b>MENTIMETER WORD CLOUD</b><small>Screenshot hasil jawaban kelas akan ditaruh di frame ini.</small><span class="photo-placeholder-footer">ADD IMAGE PATH IN CONFIG.JS</span></div>
+          <img id="mentimeter-photo" alt="Hasil Mentimeter Word Cloud tentang kelas SI A 25" hidden />
+          <figcaption>SI A 25 · IN OUR OWN WORDS</figcaption>
+        </figure>
+        <details class="class-message-board"><summary><span class="note-index">KESAN &amp; PESAN</span><strong>Yang ingin kalian tinggalkan.</strong><span class="board-caption">BUKA DINDING PESAN</span></summary><div id="class-message-wall" class="class-message-wall"></div></details>
+        <div class="scene-footnote"><span>THANK YOU FOR SHARING YOUR WORDS</span><span>SI A 25 · 2025</span></div>
+      </section>
+
+      <section class="scene scene-instagram" data-scene="11" data-track="finale" aria-label="Connect on Instagram" hidden>
+        <div class="instagram-heading">
+          <p class="eyebrow">CHAPTER 11 <span class="eyebrow-line"></span> KEEP IN TOUCH</p>
+          <h2>Ceritanya selesai,<br/><em>connect-nya lanjut.</em></h2>
+          <p class="scene-intro">Kalau mau tetap terhubung setelah kelas ini, follow kami di Instagram. Sampai ketemu di cerita berikutnya.</p>
+        </div>
+        <div class="instagram-profiles">
+          <a class="instagram-profile" href="https://www.instagram.com/francesco.alx/" target="_blank" rel="noopener noreferrer" aria-label="Follow Francesco di Instagram, @francesco.alx">
+            <span class="instagram-photo-wrap"><img src="assets/image/igfran.jpeg" alt="Foto Instagram Francesco" loading="lazy" /><span class="instagram-photo-tag">YOUR ASDOS</span></span>
+            <span class="instagram-profile-info"><span class="instagram-profile-name">Francesco Alexander</span><span class="instagram-handle">@francesco.alx <span aria-hidden="true">↗</span></span></span>
+          </a>
+          <a class="instagram-profile instagram-profile-cathrine" href="https://www.instagram.com/cathrine_s_a/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cathrine di Instagram, @cathrine_s_a">
+            <span class="instagram-photo-wrap"><img src="assets/image/igcath.jpeg" alt="Foto Instagram Cathrine" loading="lazy" /><span class="instagram-photo-tag">YOUR ASDOS</span></span>
+            <span class="instagram-profile-info"><span class="instagram-profile-name">Cathrine Sandrina</span><span class="instagram-handle">@cathrine_s_a <span aria-hidden="true">↗</span></span></span>
+          </a>
+        </div>
+        <div class="instagram-note"><span class="instagram-note-mark">@</span><span>ONE CLASS, MANY STORIES.<br/><em>Let’s keep in touch.</em></span><span class="instagram-note-caption">SI A 25 · 2025</span></div>
+        <div class="scene-footnote"><span>FIND US AFTER THE LAST CHAPTER</span><span>FRANCESCO × CATHRINE</span></div>
+      </section>
+
+      <section class="scene scene-final" data-scene="12" data-track="finale" aria-label="The last frame" hidden>
+        <div class="final-topline"><span>THE LAST CHAPTER · FINAL FRAME</span><span>SI A 25 / FOREVER IN THE ARCHIVE</span></div>
+        <div class="final-heading"><p class="eyebrow">ONE LAST THING BEFORE WE GO</p><h2>The Last<br/><em>Frame.</em></h2><p>Semua cerita tadi punya satu kesamaan: ada orang-orang yang menjalaninya bersama.</p></div>
+        <figure class="final-photo-frame" id="final-photo-frame">
+          <div class="photo-placeholder" id="photo-placeholder"><span class="photo-cross">✳</span><b>OUR ONE LAST PICTURE</b><small>Satu foto SI A 25 akan diletakkan di sini.</small><span class="photo-placeholder-footer">DROP THE CLASS PHOTO HERE LATER</span></div>
+          <img id="final-photo" alt="Foto kenangan bersama SI A 25" hidden />
+          <figcaption>SI A 25 · THE LAST CHAPTER</figcaption>
+        </figure>
+        <div class="final-signoff"><span>THANK YOU FOR BEING PART OF IT.</span><strong>See you in the next chapter.</strong><span>— FRANCESCO & CATHRINE</span></div>
+        <button id="replay-button" class="text-button replay-button" type="button">↶ Ulangi perjalanan dari awal</button>
+      </section>
+    </main>
+
+    <footer class="bottombar">
+      <button id="previous-button" class="text-button" type="button" disabled>← Sebelumnya</button>
+      <div id="scene-dots" class="scene-dots" aria-label="Navigasi chapter"></div>
+      <button id="next-button" class="text-button next-control" type="button">Selanjutnya →</button>
+    </footer>
+  </div>
+  <audio id="background-audio" preload="none" loop></audio>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="photo-lightbox" class="photo-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto SI A 25">
+    <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Tutup foto">Tutup ×</button>
+    <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Foto sebelumnya">←</button>
+    <figure class="lightbox-figure"><img id="lightbox-image" alt="Foto kenangan SI A 25 ukuran penuh" /><figcaption id="lightbox-counter">1 / 3</figcaption></figure>
+    <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Foto berikutnya">→</button>
+  </div>
+</body>
+</html>
