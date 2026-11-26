@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f4efe3" />
-  <meta name="description" content="SI A 25 — The Last Chapter. Sebuah arsip kecil tentang perjalanan Pemrograman Antarmuka Pengguna." />
-  <title>SI A 25 — The Last Chapter</title>
+  <meta name="description" content="TI B 26 — The Last Chapter. Sebuah arsip kecil tentang perjalanan Fundamental Programming." />
+  <title>TI B 26 — The Last Chapter</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="config.js" defer></script>
   <script src="content.js" defer></script>
@@ -15,8 +15,8 @@
   <div class="grain" aria-hidden="true"></div>
   <div id="site" class="site">
     <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="SI A 25 home"><span>SI A <b>25</b></span></a>
-      <div class="topbar-center"><span class="topbar-course">PEMROGRAMAN ANTARMUKA PENGGUNA</span><span class="topbar-divider"></span><span id="scene-counter">01 / 09</span></div>
+      <a class="wordmark" href="#top" aria-label="TI B 26 home"><span>TI B 26</span></a>
+      <div class="topbar-center"><span class="topbar-course">FUNDAMENTAL PROGRAMMING</span><span class="topbar-divider"></span><span id="scene-counter">01 / 16</span></div>
       <div class="topbar-actions">
         <button id="music-toggle" class="icon-button" type="button" aria-label="Putar musik" title="Musik"><span class="music-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="music-label">MUSIC OFF</span></button>
         <label class="volume-control" title="Atur volume musik">
@@ -26,6 +26,7 @@
         </label>
         <button id="logout-button" class="text-button" type="button">Keluar</button>
       </div>
+      <div class="quest-top-status" aria-hidden="true"><span class="quest-top-dots"><i></i><i></i><i></i><i></i><i></i><i></i></span><b>QUEST BOARD</b></div>
     </header>
 
     <div class="progress-track"><span id="progress-fill"></span></div>
@@ -67,237 +68,456 @@
               </g>
               <rect x="20" y="20" width="520" height="520" rx="4" fill="none" stroke="#294837" stroke-width="5"/>
             </svg>
-            <span class="art-sticker art-sticker-date">SEMESTER<br/>2025</span>
-            <span class="art-sticker art-sticker-people">47<br/><small>ORANG</small></span>
+            <span class="art-sticker art-sticker-date">FUNDAMENTAL<br/>PROGRAMMING</span>
+            <span class="art-sticker art-sticker-people">TI B<br/><small>FUNDAMENTAL</small></span>
           </div>
-          <div class="cover-art-caption"><span class="caption-rule"></span><span>Meja yang sama.<br/><em>Cerita yang beda-beda.</em></span><span class="caption-mark">SI A / 25</span></div>
+          <div class="cover-art-caption"><span class="caption-rule"></span><span>Meja yang sama.<br/><em>Cerita yang beda-beda.</em></span><span class="caption-mark">TI B 26</span></div>
         </div>
         <div class="cover-main">
           <p class="eyebrow"><span class="eyebrow-line"></span> SEBUAH CERITA TENTANG KITA</p>
-          <h1>SI A <span>25</span></h1>
+          <h1>TI B <span>26</span></h1>
           <p class="cover-title">The Last Chapter<span class="period">.</span></p>
           <div class="cover-rule"></div>
           <p class="cover-desc">Bukan tentang akhir dari semuanya.<br/>Tapi tentang semua hal yang pernah terjadi di antaranya.</p>
           <button class="button button-primary" data-next type="button">Buka cerita <span aria-hidden="true">↓</span></button>
         </div>
         <div class="cover-footer"><span>01 — AN OPENING NOTE</span><span>SCROLL IS OVERRATED. LET'S TURN THE PAGE.</span></div>
-        <div class="cover-index" aria-hidden="true">25</div>
+        <div class="cover-index" aria-hidden="true">TI B</div>
       </section>
 
       <section class="scene scene-beginning" data-scene="1" data-track="story" aria-label="The unexpected beginning" hidden>
         <div class="scene-heading">
           <p class="eyebrow">CHAPTER 01 <span class="eyebrow-line"></span> THE BEGINNING</p>
-          <h2>Salah input?<br/><em>Atau ketuker?</em></h2>
-          <p class="scene-intro">Waktu pembagian kelas keluar, kami belum yakin ini benar. Chat pun berubah jadi sesi tebak-tebakan: kami sebenarnya mendaftar mata kuliah apa?</p>
+          <h2>Semua dimulai<br/><em>dari dasar.</em></h2>
+          <p class="scene-intro">Di kelas ini, belajar Fundamental Programming nggak cuma soal duduk, nyatet, terus ngoding. Ada TeachQuest yang bikin tiap pertemuan punya tantangannya sendiri.</p>
         </div>
-        <aside class="reunion-art" aria-label="Ringkasan obrolan saat hasil pembagian kelas keluar">
-          <div class="reunion-art-head"><span>CHAT ASLI · FRANCESCO × CATHRINE</span><span>14:55—15:09</span></div>
-          <div class="chat-collage" aria-label="Tiga foto percakapan">
-            <button class="chat-photo chat-photo-main" type="button" data-chat-photo="0" aria-label="Lihat foto chat pertama ukuran penuh">
-              <img src="assets/image/chatwa1.jpeg" alt="Chat saat pertama melihat nama Pemrograman Antarmuka Pengguna" />
-              <span class="chat-photo-caption"><b>01</b> “tf is pemograman antar muka pengguna”</span>
-            </button>
-            <button class="chat-photo chat-photo-second" type="button" data-chat-photo="1" aria-label="Lihat foto chat kedua ukuran penuh">
-              <img src="assets/image/chatwa2.jpeg" alt="Lanjutan chat saat mencoba menebak kelas yang didapat" />
-              <span class="chat-photo-caption"><b>02</b> Coba cocokkan lagi</span>
-            </button>
-            <button class="chat-photo chat-photo-third" type="button" data-chat-photo="2" aria-label="Lihat foto chat ketiga ukuran penuh">
-              <img src="assets/image/chatwa3.jpeg" alt="Chat saat membandingkan mata kuliah yang didaftarkan" />
-              <span class="chat-photo-caption"><b>03</b> Daftar mata kuliah</span>
-            </button>
-          </div>
-          <div class="reunion-art-caption"><strong>Ketuk fotonya</strong><span>buat lihat chat lebih jelas.</span></div>
-        </aside>
+        <figure class="reunion-art"><div class="reunion-art-head"><span>CATATAN PERJALANAN</span><span>TI B · 26</span></div><img src="assets/image/people-study-collage.png" alt="Buku, laptop berisi kode, dan tanaman sebagai ilustrasi perjalanan belajar"/><figcaption class="reunion-art-caption"><strong>Dari logika ke kode.</strong><span>ALGORITMA → C++ → JAVA</span></figcaption><span class="beginning-art-sticker" aria-hidden="true">LEARN<br/>BY PLAY</span></figure>
         <div class="story-copy two-column-copy">
-          <p>Nama <strong>Pemrograman Antarmuka Pengguna</strong> terasa asing karena yang kami ingat, kami mendaftar untuk mengajar <strong>Front-End Programming</strong>. Reaksi pertama: mungkin ada yang salah input.</p>
-          <p>Di chat, tebakan kami berubah-ubah—salah input, tertukar, atau dipindahkan ke kelas lain. Kami saling tanya lagi mata kuliah apa saja yang kami pilih, sambil mencoba memahami pembagian yang baru keluar.</p>
-          <p>Lalu muncul kejutan berikutnya: kelasnya <strong>SI A 25.</strong> Francesco sudah pernah mengajar mereka. Buat Cathrine, ini pertemuan pertama.</p>
-          <p>Waktu itu kami belum tahu bahwa kelas yang kami dapat secara tak terduga ini akan menjadi bagian dari semester terakhir kami sebagai asisten dosen.</p>
+          <p>Jujur, Fundamental Programming TI B jadi salah satu matkul paling seru semester ini. Ide gamifikasinya datang dari Pak Darius: sebelum UTS kita belajar algoritma dan C++, setelah UTS lanjut ke Java. TI A dan TI B jadi dua kelas yang nyobain cara belajar ini.</p>
+          <p>Di balik TeachQuest, aku dan Moses sempat ngebut dua minggu buat setup semuanya sambil belajar sistemnya sampai paham. Lumayan banyak yang harus disiapin supaya quest-nya bisa jalan bareng materi di kelas.</p>
+          <p>Dari awal semester, kalian diminta untuk membuat kelompok yang terdiri dari 3-4 orang, yang kelompok ini menjadi tim kalian dari awal sampai akhir semester. Asik lihat tiap kelompok nyusun strategi sendiri buat ngelewatin quest—kadang serius banget, kadang ada aja dramanya.</p>
+          <p>Pokoknya, makasih udah ikut seru-seruan dan berjuang bareng selama satu semester ini. kami harap web iseng isengan ini bisa ngehibur kalian (pls bruh tidur 3 jam doang karena ngerjain ginian)</p>
         </div>
-        <div class="scene-footnote"><span>FRANCESCO × CATHRINE</span><span>AN UNEXPECTED REUNION</span></div>
+        <div class="scene-footnote"><span>FRANCESCO × MOSES</span><span>FUNDAMENTAL PROGRAMMING</span></div>
       </section>
 
       <section class="scene scene-classroom" data-scene="2" data-track="classroom" aria-label="The class" hidden>
         <div class="scene-heading">
-          <p class="eyebrow">CHAPTER 02 <span class="eyebrow-line"></span> SI A, APA ADANYA</p>
+          <p class="eyebrow">CHAPTER 02 <span class="eyebrow-line"></span> TI B 26, APA ADANYA</p>
           <h2>Nggak pernah<br/><em>benar-benar sepi.</em></h2>
-          <p class="scene-intro">Ada yang cepat paham materi. Ada yang instalasinya makan satu sesi. Kelas ini selalu punya ritme sendiri.</p>
+          <p class="scene-intro">TI B 26 itu kelas yang seru dan nggak pernah terasa sepi. Isinya macam-macam keunikan—banyak yang aktif jawab, aktif nanya, dan ikut bikin suasana kelas hidup.</p>
         </div>
         <div class="classroom-copy">
-          <p>Ada yang cepat paham materi. Ada yang instalasinya makan satu sesi. Ada yang selalu aktif bertanya. Ada juga yang bikin suasana kelas jadi rame dan hidup.</p>
-          <p>Dari tugas kelompok ke presentasi dan demo website, hampir selalu ada yang dikerjakan bareng. Kadang satu instalasi sederhana bisa makan hampir dua jam—dan sesi kelas keburu habis.</p>
-          <blockquote>Semua beda, tapi justru itu yang bikin SI A 25 selalu punya ritme sendiri.</blockquote>
+          <p>Kelas yang sangat seru, semuanya punya keunikan masing masing, banyak banget yang aktif bertanya, dan aktif menjawab juga, ya iyalahhh "Kelas TI 26 paling pinter" -Bu Dyah. Kelasnya sangat sangat gacor</p>
+          <p>Di sisi lain, banyak yang masih nyaman bareng circle masing-masing. Masih dalam proses saling kenal, jadi obrolan dan kedekatan lintas kelompok mungkin belum terbentuk semua.</p>
+          <blockquote>Beda circle, satu kelas. Semoga makin lama makin banyak cerita bareng.</blockquote>
         </div>
         <figure class="classroom-collage">
           <img src="assets/image/classroom-collage.png" alt="Kolase foto suasana kelas komputer dan sketsa rancangan website di buku catatan" />
-          <figcaption>47 Orang, Satu Kelas.<span>SI A · 25</span></figcaption>
+          <figcaption>Satu Kelas, Banyak Cerita.<span>TI B 26</span></figcaption>
           <span class="collage-sparkle" aria-hidden="true">✳</span>
         </figure>
-        <div class="scene-footnote"><span>47 ORANG · BANYAK CARA BELAJAR</span><span>NGGAK PERNAH ADA PRAKTIKUM YANG SAMA</span></div>
+        <div class="scene-footnote"><span>FUNDAMENTAL PROGRAMMING · BANYAK CARA BELAJAR</span><span>NGGAK PERNAH ADA PRAKTIKUM YANG SAMA</span></div>
       </section>
 
       <section class="scene scene-teachquest" data-scene="3" data-track="teachquest" aria-label="TeachQuest" hidden>
-        <div class="scene-heading">
-          <p class="eyebrow">CHAPTER 03 <span class="eyebrow-line"></span> TEACHQUEST</p>
-          <h2>Belajar, tapi<br/><em>ada quest-nya.</em></h2>
-          <p class="scene-intro">Tiga minggu pertama terasa monoton. Kami ingin suasana belajar punya sesuatu yang berbeda. Memasuki minggu keempat, kami memperkenalkan cara baru agar belajar terasa seperti permainan: TeachQuest.</p>
-        </div>
-        <figure class="quest-archive-art">
-          <img src="assets/image/teachquest-archive.png" alt="Kolase arsip fantasi dengan peta, kastil, segel lilin, dan daftar quest" />
-          <figcaption><strong>TEACHQUEST</strong><span>CLASSROOM GAMIFICATION</span></figcaption>
-          <div class="quest-checklist" aria-label="Prinsip TeachQuest"><strong>A Classroom RPG</strong><span>Choose Your Role</span><span>Earn XP</span><span>Use Skills</span><span>Complete Quests</span><span>Grow Together</span></div>
-        </figure>
-        <div class="quest-field">
-          <div class="quest-field-title"><span></span>THE CORE OF TEACHQUEST<span></span></div>
-          <div class="quest-stats" aria-label="Sistem poin TeachQuest">
-            <div><span class="stat-code xp">XP</span><b>Experience Points</b><small>Didapatkan dari berbagai aktivitas positif seperti bertanya, menjawab, atau menyelesaikan quest.</small></div>
-            <div><span class="stat-code hp">HP</span><b>Health Points</b><small>Menjadi bagian dari aturan kelas, seperti terlambat atau telat mengumpulkan tugas.</small></div>
-            <div><span class="stat-code mp">MP</span><b>Mana Points</b><small>Digunakan untuk mengaktifkan skill sesuai dengan role karakter.</small></div>
-            <div><span class="stat-code gp">GP</span><b>Gold Points</b><small>Mata uang untuk berbagai item kosmetik, seperti pet, avatar, dan background.</small></div>
+        <div class="teachquest-hero">
+          <div class="scene-heading">
+            <p class="eyebrow">CHAPTER 04 <span class="eyebrow-line"></span> TEACHQUEST</p>
+            <h2>Belajar, tapi<br/><em>ada quest-nya.</em></h2>
+            <p class="scene-intro">TeachQuest mengubah beberapa aktivitas belajar Fundamental Programming jadi pengalaman ala RPG kelas. Kalian membentuk tim, memilih role, mengumpulkan XP, dan saling bantu menyelesaikan tantangan.</p>
           </div>
-          <details class="quest-details">
-            <summary>More quest notes ↓</summary>
-            <div class="quest-bottom-grid">
-          <div><span class="note-index">CHARACTER ROLES</span><div class="role-list"><span>Defender</span><span>Wizard</span><span>Healer</span><span>Tinkerer</span></div></div>
-          <div><span class="note-index">WEEKLY SIDE FUN</span><p>Tebak angka, tebak dosen, sampai kompetisi rekening bank terbanyak. Ada juga daily events dan random encounters yang membuat kelas punya kejutan sendiri.</p></div>
-            </div>
-          <div class="quiet-reward"><span class="quiet-star">✦</span><p><strong>One more thing.</strong> Di awal, TeachQuest cukup sering digunakan. Seiring waktu, intensitas penggunaannya memang berkurang, tetapi bukan berarti sistemnya ditinggalkan. Sesekali reward masih diberikan diam-diam kepada mahasiswa yang melakukan sesuatu yang layak diapresiasi—termasuk melalui salah satu website yang baru-baru ini digunakan di kelas. Beberapa kejutan memang lebih seru kalau tidak diumumkan dulu.</p></div>
-          </details>
+          <figure class="quest-archive-art">
+            <img src="assets/image/teachquest-hero-party.png" alt="Empat karakter adventurer TI B belajar bersama dari buku quest" />
+            <figcaption><strong>TEACHQUEST</strong><span>CLASSROOM GAMIFICATION</span></figcaption>
+            <span class="quest-hero-stamp">TI B 26<br/><small>CHOOSE YOUR ROLE</small></span>
+          </figure>
         </div>
+        <section class="teachquest-team" aria-labelledby="teachquest-team-title">
+          <div class="teachquest-section-heading"><h3 id="teachquest-team-title">Bentuk Tim Petualanganmu</h3><span class="team-size-ribbon">1 TIM · 3–4 MAHASISWA</span></div>
+          <p class="team-intro">Pilih role dan bentuk tim berisi 3–4 orang. Ini contoh tim dengan empat role; tim berisi tiga orang tetap bisa memilih komposisi sendiri.</p>
+          <div class="role-card-grid">
+            <article class="role-card role-defender"><div class="role-character" aria-hidden="true"></div><h4>Defender</h4><p>Tembok tim yang melindungi teman dari damage. HP paling tinggi, MP lebih sedikit.</p><div class="role-stat-pills"><span class="role-hp"><i>♥</i> HP <b>100</b></span><span class="role-mp"><i>◉</i> MP <b>50</b></span></div><div class="role-balance"><span>XP <small>progres individu</small></span><i></i><span>GP <small>saldo individu</small></span><i></i></div></article>
+            <article class="role-card role-wizard"><div class="role-character" aria-hidden="true"></div><h4>Wizard</h4><p>Pengguna skill dengan MP paling banyak. Bisa membantu mengisi MP teman.</p><div class="role-stat-pills"><span class="role-hp"><i>♥</i> HP <b>50</b></span><span class="role-mp"><i>◉</i> MP <b>100</b></span></div><div class="role-balance"><span>XP <small>progres individu</small></span><i></i><span>GP <small>saldo individu</small></span><i></i></div></article>
+            <article class="role-card role-healer"><div class="role-character" aria-hidden="true"></div><h4>Healer</h4><p>Penjaga tim yang memulihkan HP teman saat mulai rendah.</p><div class="role-stat-pills"><span class="role-hp"><i>♥</i> HP <b>75</b></span><span class="role-mp"><i>◉</i> MP <b>75</b></span></div><div class="role-balance"><span>XP <small>progres individu</small></span><i></i><span>GP <small>saldo individu</small></span><i></i></div></article>
+            <article class="role-card role-tinkerer"><div class="role-character" aria-hidden="true"></div><h4>Tinkerer</h4><p>Support yang bisa memanipulasi input atau output untuk membantu diri sendiri dan tim.</p><div class="role-stat-pills"><span class="role-hp"><i>♥</i> HP <b>75</b></span><span class="role-mp"><i>◉</i> MP <b>75</b></span></div><div class="role-balance"><span>XP <small>progres individu</small></span><i></i><span>GP <small>saldo individu</small></span><i></i></div></article>
+          </div>
+        </section>
+        <section class="quest-field" aria-labelledby="teachquest-points-title">
+          <div class="teachquest-section-heading"><h3 id="teachquest-points-title">Yang Perlu Kalian Tahu</h3><span class="section-heading-rule"></span></div>
+          <div class="quest-stats" aria-label="Sistem poin TeachQuest">
+            <article class="resource-card resource-xp"><div class="resource-card-title"><span class="resource-icon">✦</span><div><b>XP</b><small>EXPERIENCE POINTS</small></div></div><p>Kumpulkan dari aktivitas positif dan quest. Setiap 1.000 XP naik level; XP juga bisa dikonversi jadi nilai tugas.</p><ul><li><strong>+150 XP</strong> · Bertanya dengan baik</li><li><strong>+100 XP</strong> · Menemukan kesalahan dosen</li><li><strong>+10 XP</strong> · Jawaban benar saat review</li><li><strong>+500 XP</strong> · Menyelesaikan Training</li></ul></article>
+            <article class="resource-card resource-hp"><div class="resource-card-title"><span class="resource-icon">♥</span><div><b>HP</b><small>HEALTH POINTS</small></div></div><p>HP berkurang saat melanggar aturan kelas. Tidak ada regenerasi HP.</p><ul><li><strong>−15 HP</strong> · Terlambat masuk kelas</li><li><strong>−2 HP</strong> · Jawaban salah saat review</li><li><strong>−5 HP</strong> · Tidak membaca materi</li><li><strong>−20 HP</strong> · Telat mengumpulkan tugas</li><li><strong>−999 HP</strong> · Cheating</li></ul><div class="resource-note">Cheating menyebabkan curse yang tidak bisa dihapus dengan skill.</div></article>
+            <article class="resource-card resource-mp"><div class="resource-card-title"><span class="resource-icon">◉</span><div><b>MP</b><small>MANA POINTS</small></div></div><p>Dipakai untuk mengaktifkan skill sesuai role. Tiap class punya skill yang berbeda.</p><div class="regen-note"><span>⟳</span><b>Regenerasi harian<br/>+3 MP</b></div><div class="resource-illustration" aria-hidden="true"><img src="assets/image/quest-hero-books.png" alt=""/></div></article>
+            <article class="resource-card resource-gp"><div class="resource-card-title"><span class="resource-icon">◉</span><div><b>GP</b><small>GOLD POINTS</small></div></div><p>Gold untuk membeli item kosmetik dan potion. Biasanya didapat bersama reward XP.</p><ul><li>Pet <strong>· 500 GP</strong></li><li>Character background <strong>· 750 GP</strong></li><li>Character avatar <strong>· 1.000 GP</strong></li><li>Potion <strong>· harga bervariasi</strong></li></ul></article>
+          </div>
+        </section>
+        <aside class="teachquest-fallen-panel" aria-label="Aturan saat HP habis">
+          <div class="fallen-art"><img src="assets/image/teachquest-curse-sticker.png" alt="Hati retak dan surat curse bersegel"/></div><div class="fallen-main"><h3>HP mencapai 0?</h3><p>Karakter akan <em>fallen</em> lalu revive kembali dengan <em>curse</em> acak.</p></div>
+          <div class="fallen-rules"><p><span>✓</span> Kalau satu anggota tim fallen, teman satu tim terkena collateral damage sebesar <strong>10 HP</strong>.</p><p><span>✓</span> Bantu teman belajar dan memahami materi—bukan dengan memberi jawaban atau contekan.</p></div>
+        </aside>
+        <aside class="teachquest-weekly-panel" aria-label="Aktivitas tambahan TeachQuest">
+          <strong class="weekly-title">Aktivitas<br/>Tambahan</strong><div class="weekly-activity"><span>▦</span><b>Daily Events</b></div><div class="weekly-activity"><span>⚄</span><b>Random Encounters</b></div><div class="weekly-activity"><span>♜</span><b>Weekly Side Fun</b></div><p>Kadang ada tebak angka, tebak dosen, kompetisi, dan kejutan lain di kelas.</p>
+        </aside>
+        <div class="scene-footnote teachquest-footnote"><span>CLASSROOM RPG · LEARN TOGETHER</span><span>GJ2627 · TK13028 · FUNDAMENTAL PROGRAMMING (B) · DARIUS ANDANA HARIS</span></div>
       </section>
 
-      <section class="scene scene-journey" data-scene="4" data-track="learning" aria-label="Learning journey" hidden>
+      <section class="scene scene-blooket" data-scene="4" data-track="teachquest" aria-label="Blooket" hidden>
+        <div class="blooket-hero">
+          <div class="scene-heading blooket-page-heading">
+            <p class="eyebrow">CHAPTER 05 <span class="eyebrow-line"></span> BLOOKET</p>
+            <h2>Review materi,<br/><em>ada game-nya.</em></h2>
+            <p class="scene-intro">Setiap minggu, kita akan bermain Blooket untuk mengulang dan menguji pemahaman materi Fundamental Programming dari minggu sebelumnya. Pertanyaan dan jenis game-nya berganti setiap minggu, jadi selalu ada tantangan baru.</p>
+          </div>
+          <figure class="blooket-hero-art"><img src="assets/image/blooket-hero-party.png" alt="Mahasiswa merayakan sesi kuis pemrograman bersama, dengan laptop, papan kuis, dan piala" /></figure>
+        </div>
+
+        <section class="blooket-howto" aria-labelledby="blooket-howto-title">
+          <div class="blooket-section-heading"><h3 id="blooket-howto-title">Cara Main Blooket</h3><span></span></div>
+          <div class="blooket-steps">
+            <article class="blooket-step"><span class="step-number">01</span><span class="step-icon" aria-hidden="true">▤</span><b>Review materi<br/>minggu sebelumnya</b></article>
+            <span class="step-arrow" aria-hidden="true">›</span>
+            <article class="blooket-step"><span class="step-number">02</span><span class="step-icon" aria-hidden="true">⌕</span><b>Jawab pertanyaan<br/>yang muncul di game</b></article>
+            <span class="step-arrow" aria-hidden="true">›</span>
+            <article class="blooket-step"><span class="step-number">03</span><span class="step-icon" aria-hidden="true">★</span><b>Kumpulkan EXP<br/>dan jaga HP-mu</b></article>
+          </div>
+          <p class="blooket-note"><span aria-hidden="true">ⓘ</span> Format game dan kumpulan pertanyaan bisa berbeda di setiap sesi.</p>
+        </section>
+
+        <section class="blooket-rewards" aria-labelledby="blooket-rewards-title">
+          <div class="blooket-section-heading"><h3 id="blooket-rewards-title">Reward &amp; Konsekuensi</h3><span></span></div>
+          <div class="blooket-reward-grid">
+            <article class="blooket-reward-card correct"><span class="reward-symbol" aria-hidden="true">★</span><span class="reward-ribbon">JAWABAN BENAR</span><strong>+10 <i>EXP</i></strong><p>Setiap jawaban benar menambah 10 EXP.</p></article>
+            <article class="blooket-reward-card incorrect"><span class="reward-symbol" aria-hidden="true">♥</span><span class="reward-ribbon">JAWABAN SALAH</span><strong>−1 <i>HP</i></strong><p>Setiap jawaban salah mengurangi 1 HP.</p></article>
+            <article class="blooket-reward-card podium-reward"><span class="reward-symbol" aria-hidden="true">♛</span><span class="reward-ribbon">BONUS PODIUM</span><strong>+150 <i>XP</i></strong><p>Bonus tambahan untuk masing-masing mahasiswa yang meraih juara 1, 2, atau 3.</p></article>
+          </div>
+        </section>
+
+        <section class="blooket-podium-section" aria-labelledby="blooket-podium-title">
+          <div class="blooket-section-heading"><h3 id="blooket-podium-title">Podium Pemenang</h3><span></span></div>
+          <div class="blooket-podium-content"><img src="assets/image/blooket-podium.png" alt="Podium juara satu, dua, dan tiga dengan medali emas, perak, dan perunggu" /><aside><span aria-hidden="true">♛</span><p>Top 3 di setiap sesi mendapat bonus <strong>150 XP</strong> tambahan.</p></aside></div>
+        </section>
+
+        <aside class="blooket-weekly-panel" aria-label="Tantangan mingguan">
+          <div class="weekly-sign"><span>TANTANGAN<br/>MINGGUAN</span></div>
+          <div class="weekly-copy"><h3>Setiap minggu, suasananya bisa berubah.</h3><p>Mode permainan dan pertanyaan akan berganti setiap minggu, mengikuti materi yang sudah dipelajari. Siapkan diri untuk format kuis dan tantangan yang berbeda di setiap sesi.</p><div class="blooket-note"><span aria-hidden="true">ⓘ</span> Materi yang diuji: pembelajaran minggu sebelumnya.</div></div>
+          <div class="weekly-art" aria-hidden="true"><span>▦</span><span>?</span><span>⚄</span><span>&lt;/&gt;</span></div>
+        </aside>
+
+        <div class="scene-footnote blooket-footnote"><span>BELAJAR MINGGUAN · KUIS · REWARD</span><span>TI B 26 · FUNDAMENTAL PROGRAMMING · BLOOKET</span></div>
+      </section>
+
+      <section class="scene scene-quests" data-scene="5" data-track="teachquest" aria-label="Daftar quest" hidden>
+        <div class="quest-hero">
+          <div class="scene-heading quest-page-heading">
+            <p class="eyebrow">CHAPTER 04 <span class="eyebrow-line"></span> QUEST BOARD</p>
+            <h2>Tantangan berikutnya,<br/><em>pilih quest-mu.</em></h2>
+            <p class="scene-intro">Latih kemampuan, kerja sama, dan kecepatan lewat tantangan Fundamental Programming berikut.</p>
+          </div>
+          <div class="quest-hero-art"><img src="assets/image/quest-hero-books.png" alt="Ilustrasi buku pemrograman, kartu Quest Board, dan tanaman" /></div>
+        </div>
+        <div class="quest-board">
+          <article class="quest-card quest-card-featured">
+            <div class="quest-card-top"><span class="quest-number">QUEST 01</span><span class="quest-type">SOLO · C++</span></div>
+            <div class="quest-card-main">
+              <img class="quest-illustration quest-illustration-terminal" src="assets/image/quest-cpp-terminal.png" alt="Ilustrasi komputer terminal klasik" />
+              <div class="quest-card-copy"><h3>Bebas Berkreasi dengan C++</h3>
+                <p class="quest-card-lead">Latih kemampuan mengetik dengan membuat program C++ sepanjang dan sekreatif mungkin.</p>
+                <p>Buat program apa pun. Penilaian mempertimbangkan panjang program, kerapian kode, dan kreativitas. Kumpulkan file <code>.cpp</code> atau file teks <code>.txt</code> dengan membalas post quest ini.</p>
+              </div>
+            </div>
+            <div class="quest-reward"><span>REWARD</span><strong>100–1.000 XP</strong><strong>100–1.000 GP</strong></div>
+            <p class="quest-deadline"><b>Batas waktu:</b> sebelum kelas offline hari ini dimulai. Reward ditentukan berdasarkan kriteria penilaian.</p>
+          </article>
+
+          <article class="quest-card quest-card-typing">
+            <div class="quest-card-top"><span class="quest-number">QUEST 02</span><span class="quest-type">KELOMPOK · 3–4 ORANG</span></div>
+            <div class="quest-card-main">
+              <img class="quest-illustration quest-illustration-keyboard" src="assets/image/quest-typing-keyboard.png" alt="Ilustrasi keyboard vintage" />
+              <div class="quest-card-copy"><h3>Lomba Ketik Kode</h3>
+                <p>Satu kode panjang akan ditampilkan. Bentuk tim berisi 3–4 orang, susun strategi, lalu ketik seluruh kode secepat mungkin.</p>
+                <div class="quest-callout">Kerja sama dan strategi tim jadi kunci untuk menyelesaikan kode lebih dulu.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="quest-card quest-card-spritebox">
+            <div class="quest-card-top"><span class="quest-number">QUEST 03</span><span class="quest-type">SPRITEBOX</span></div>
+            <div class="quest-card-main quest-card-main-spritebox">
+              <img class="quest-illustration quest-illustration-platform" src="assets/image/quest-spritebox-platforms.png" alt="Ilustrasi platform permainan dengan bendera tujuan" />
+              <div class="quest-card-copy"><h3>Selesaikan Petualangan SpriteBox</h3>
+                <p>SpriteBox adalah game petualangan puzzle-platformer untuk belajar logika coding lewat urutan instruksi, parameter, loop, dan debugging. Beberapa puzzle beralih dari perintah berbasis ikon ke sintaks Swift.</p>
+                <a class="spritebox-link" href="https://spritebox.com/" target="_blank" rel="noopener noreferrer">Kenali SpriteBox di situs resmi <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <div class="badge-list">
+              <div class="badge-tier badge-legendary"><span class="badge-name">LEGENDARY</span><b>Selesaikan saat di kelas</b><strong>+2.000 XP <i>·</i> +200 GP</strong><small>Reward sudah termasuk di dalam badge.</small></div>
+              <div class="badge-tier badge-rare"><span class="badge-name">RARE</span><b>Selesaikan sebelum Jumat, tanggal 11 pukul 19.00</b><strong>+1.500 XP <i>·</i> +150 GP</strong><small>Reward sudah termasuk di dalam badge.</small></div>
+              <div class="badge-tier badge-common"><span class="badge-name">COMMON</span><b>Selesaikan sebelum kelas hari Jumat, tanggal 18 pukul 08.30</b><strong>+1.000 XP <i>·</i> +100 GP</strong><small>Reward sudah termasuk di dalam badge.</small></div>
+            </div>
+            <p class="quest-expired">Lewat dari batas Common: tidak mendapatkan badge atau reward.</p>
+          </article>
+
+          <article class="quest-card quest-card-training">
+            <div class="quest-card-top"><span class="quest-number">QUEST 04</span><span class="quest-type">TRAINING · INDIVIDU</span></div>
+            <div class="quest-card-main">
+              <img class="quest-illustration quest-illustration-stopwatch" src="assets/image/quest-training-stopwatch.png" alt="Ilustrasi stopwatch untuk tantangan cepat" />
+              <div class="quest-card-copy"><h3>Training: Adu Cepat Membuat Program</h3>
+                <p>Buat program sesuai soal yang ditampilkan. Setiap mahasiswa mengerjakan secepat mungkin untuk mengumpulkan poin di setiap soal.</p>
+              </div>
+            </div>
+            <div class="training-rewards"><div><strong>3 tercepat</strong><span>500 XP per soal</span></div><div><strong>Peserta lain yang selesai</strong><span>250 XP per soal</span></div></div>
+          </article>
+        </div>
+        <div class="scene-footnote"><span>FOUR QUESTS · ONE CLASS</span><span>TI B 26 · FUNDAMENTAL PROGRAMMING · QUEST BOARD</span></div>
+      </section>
+
+      <section class="scene scene-sidequests" data-scene="6" data-track="teachquest" aria-label="Sidequest Board" hidden>
+        <div class="sidequest-hero">
+          <div class="scene-heading sidequest-page-heading">
+            <p class="eyebrow">CHAPTER 05 <span class="eyebrow-line"></span> SIDEQUEST BOARD</p>
+            <h2>Petualangan sampingan,<br/><em>hadiah tambahan menanti.</em></h2>
+            <p class="scene-intro">Latih logika, eksplorasi dunia hardware, dan lanjutkan belajar programming lewat empat sidequest pilihan.</p>
+          </div>
+          <div class="sidequest-hero-art"><img src="assets/image/sidequest-hero.png" alt="Ilustrasi robot, buku pemrograman, motherboard, dan ponsel" /></div>
+        </div>
+
+        <div class="sidequest-board">
+          <article class="sidequest-card sidequest-card-lightbot">
+            <div class="sidequest-card-top"><span class="sidequest-number">SIDEQUEST 01</span><span class="sidequest-type">LOGIC PUZZLE · LIGHTBOT</span></div>
+            <div class="sidequest-card-main">
+              <img class="sidequest-illustration sidequest-lightbot-art" src="assets/image/sidequest-lightbot.png" alt="Robot puzzle mengumpulkan bintang pada ubin" />
+              <div class="sidequest-copy">
+                <h3>Latih Logika dengan Lightbot</h3>
+                <p>Lightbot adalah game untuk pembelajaran awal logika pemrograman. Semoga dengan bermain game ini, logika kalian lebih terlatih dan siap menerima pelajaran algoritma serta C++.</p>
+                <div class="sidequest-callout"><strong>SELESAIKAN SEMUA LEVEL</strong><p>Termasuk bagian Challenge. Pastikan setiap level berhasil diselesaikan hingga mendapatkan star.</p></div>
+                <p class="sidequest-proof"><span aria-hidden="true">ⓘ</span>Post screenshot progress game dengan membalas postingan sidequest ini. Sertakan screenshot yang menunjukkan level selesai beserta star.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="sidequest-card sidequest-card-hardware">
+            <div class="sidequest-card-top"><span class="sidequest-number">SIDEQUEST 02</span><span class="sidequest-type">HARDWARE SIMULATION · PC BUILDING</span></div>
+            <div class="sidequest-card-main">
+              <img class="sidequest-illustration" src="assets/image/sidequest-pc-build.png" alt="Motherboard, prosesor, kartu grafis, dan obeng" />
+              <div class="sidequest-copy">
+                <h3>Rakit PC dan Jalani Career</h3>
+                <p>Kerjakan bagian ‘How To Build PC’ terlebih dahulu agar memahami mekanismenya. Setelah itu, mainkan Career sampai minimal 1 bulan in-game.</p>
+                <div class="sidequest-target">TARGET: 1 BULAN IN-GAME</div>
+                <p class="sidequest-proof"><span aria-hidden="true">ⓘ</span>Post screenshot dengan membalas postingan ini. Screenshot harus menunjukkan kalian sudah menyelesaikan satu bulan permainan.</p>
+                <p class="sidequest-note">Jika mission yang selesai belum cukup, permainan bisa dilanjutkan ke bulan berikutnya in-game.</p>
+              </div>
+            </div>
+            <div class="sidequest-hardware-reward"><span class="hardware-medal" aria-hidden="true">★</span><div><b>BADGE: HARDWARE ENGINEER</b><strong>+2.000 <i>XP</i> · +200 <i>GP</i></strong></div></div>
+          </article>
+
+          <article class="sidequest-card sidequest-card-oracle">
+            <div class="sidequest-card-top"><span class="sidequest-number">SIDEQUEST 04</span><span class="sidequest-type">ORACLE ACADEMY · QUIZ</span></div>
+            <div class="sidequest-card-main">
+              <img class="sidequest-illustration" src="assets/image/sidequest-oracle.png" alt="Buku belajar Java dan lembar kuis" />
+              <div class="sidequest-copy">
+                <h3>Oracle Java Academy</h3>
+                <p>Kerjakan kuis pada setiap section di Academy Oracle. Setiap kuis dengan skor di atas 70 mendapatkan reward 100 XP.</p>
+              </div>
+            </div>
+            <div class="sidequest-details"><ul><li><b>Situs:</b> <a href="https://academy.oracle.com" target="_blank" rel="noopener noreferrer">academy.oracle.com</a></li><li><b>Sign in</b> ke Student HUB menggunakan email UNTAR.</li></ul></div>
+            <p class="sidequest-proof"><span aria-hidden="true">ⓘ</span>Jika lupa password, gunakan FORGOT PASSWORD. Jika belum bisa mengakses kurikulum di web tersebut, silakan lapor kepada asdos.</p>
+            <div class="sidequest-no-proof"><span aria-hidden="true">✓</span><div><b>SCREENSHOT TIDAK PERLU</b><small>Progress dapat diakses dari database.</small></div></div>
+            <div class="sidequest-reward"><span>REWARD</span><strong>100 <i>XP</i> <small>per kuis dengan skor di atas 70</small></strong></div>
+          </article>
+
+          <article class="sidequest-card sidequest-card-sololearn">
+            <div class="sidequest-card-top"><span class="sidequest-number">SIDEQUEST 03</span><span class="sidequest-type">MOBILE LEARNING · SOLOLEARN</span></div>
+            <div class="sidequest-card-main">
+              <img class="sidequest-illustration" src="assets/image/sidequest-sololearn.png" alt="Ponsel dengan kode dan kartu belajar Java" />
+              <div class="sidequest-copy">
+                <h3>Belajar Java lewat SoloLearn</h3>
+                <p>SoloLearn adalah aplikasi belajar programming untuk perangkat mobile, sehingga kalian bisa belajar programming <em>on the go</em>. SoloLearn tersedia di Play Store, App Store, dan web.</p>
+                <div class="sidequest-learning-grid">
+                  <div class="sidequest-materials"><b>YANG HARUS DIKERJAKAN</b><ol><li>Introduction to Java — semua materi</li><li>Java Intermediate: Classes and Objects — 14 topics</li><li>Java Intermediate: More on Classes — 14 topics</li></ol></div>
+                  <p class="sidequest-note">Materi sebelum dua bagian Java Intermediate tersebut merupakan materi pemrograman dasar dan lanjut yang sudah dipelajari di C++ Dasar dan Lanjut.</p>
+                </div>
+                <p class="sidequest-proof"><span aria-hidden="true">ⓘ</span>Setelah kedua section selesai, post screenshot sebagai bukti.</p>
+              </div>
+            </div>
+            <div class="sidequest-reward"><span>REWARD</span><strong>+3.000 <i>XP</i> · +500 <i>GP</i></strong></div>
+          </article>
+        </div>
+
+        <div class="scene-footnote"><span>FOUR SIDEQUESTS · EXTRA REWARDS</span><span>TI B 26 · FUNDAMENTAL PROGRAMMING · SIDEQUEST BOARD</span></div>
+      </section>
+
+      <section class="scene scene-curses" data-scene="7" data-track="teachquest" aria-label="Curse Board" hidden>
+        <div class="curse-hero">
+          <div class="scene-heading curse-page-heading">
+            <p class="eyebrow">CHAPTER 06 <span class="eyebrow-line"></span> CURSE BOARD</p>
+            <h2>Bangkit dengan 1 HP,<br/><em>hadapi curse-mu.</em></h2>
+            <p class="scene-intro">Dalam aturan TeachQuest, mahasiswa yang HP-nya habis akan mati dan dihidupkan kembali dengan 1 HP, tetapi harus menyelesaikan curse yang diterima.</p>
+          </div>
+          <div class="curse-hero-art"><img src="assets/image/curse-hero.png" alt="Petualang bangkit dengan satu hati, menghadapi bayangan curse" /></div>
+        </div>
+
+        <aside class="curse-revive-panel" aria-label="Aturan revive">
+          <span class="curse-heart-medallion" aria-hidden="true">♥</span>
+          <strong class="curse-revive-label">ATURAN REVIVE</strong>
+          <p>Jika HP habis, mahasiswa dihidupkan kembali dengan 1 HP dan terkena curse.</p>
+          <div class="curse-condition"><span aria-hidden="true">ⓘ</span><em>Curse harus diselesaikan sebagai syarat mengikuti penambahan nilai UTS/UAS.</em></div>
+        </aside>
+
+        <div class="curse-board">
+          <article class="curse-card curse-card-principal">
+            <div class="curse-card-top"><span class="curse-number">CURSE 01</span><span class="curse-type">LETTER TO PRINCIPAL</span></div>
+            <div class="curse-card-main"><img class="curse-illustration" src="assets/image/curse-letter.png" alt="Surat resmi, amplop bersegel, dan pena"/><div class="curse-copy"><h3>Letter to Principal</h3><p>Menulis surat tertulis pengakuan dosa terkait nilai UTS yang didapatkan pada mata kuliah ini ke Kepala Program Studi / Kaprodi (Bu Lely).</p></div></div>
+          </article>
+          <article class="curse-card curse-card-homework">
+            <div class="curse-card-top"><span class="curse-number">CURSE 02</span><span class="curse-type">EXTRA HOMEWORK</span></div>
+            <div class="curse-card-main"><img class="curse-illustration" src="assets/image/curse-homework.png" alt="Buku C++ dan lembar latihan kode"/><div class="curse-copy"><h3>Extra Homework</h3><p>Mengerjakan SoloLearn C++ Intro &amp; Intermediate.</p></div></div>
+          </article>
+          <article class="curse-card curse-card-detention">
+            <div class="curse-card-top"><span class="curse-number">CURSE 03</span><span class="curse-type">DETENTION</span></div>
+            <div class="curse-card-main"><img class="curse-illustration" src="assets/image/curse-detention.png" alt="Daftar tugas, jam meja, dan tempat pensil"/><div class="curse-copy"><h3>Detention</h3><p>Membantu pekerjaan kebutuhan dosen. Untuk ini silakan contact AMITA RATU OSSWALD via Teams.</p></div></div>
+          </article>
+          <article class="curse-card curse-card-snacks">
+            <div class="curse-card-top"><span class="curse-number">CURSE 04</span><span class="curse-type">BRING SNACKS FOR ENTIRE CLASS</span></div>
+            <div class="curse-card-main"><img class="curse-illustration" src="assets/image/curse-snacks.png" alt="Nampan kudapan untuk teman sekelas"/><div class="curse-copy"><h3>Bring Snacks for Entire Class</h3><p>Membawa snack untuk satu kelas untuk pertemuan selanjutnya.</p></div></div>
+          </article>
+        </div>
+
+        <div class="scene-footnote curse-footnote"><span>TEACHQUEST · CONSEQUENCES &amp; REVIVAL</span><span>GJ2627 · TK13028 · FUNDAMENTAL PROGRAMMING (B) · DARIUS ANDANA HARIS</span></div>
+      </section>
+
+      <section class="scene scene-journey" data-scene="8" data-track="learning" aria-label="Learning journey" hidden>
         <div class="scene-heading">
-          <p class="eyebrow">CHAPTER 04 <span class="eyebrow-line"></span> THE DEVELOPER JOURNEY</p>
-          <h2>Dari Satu Tag,<br/><em>ke Satu Website Utuh.</em></h2>
-          <p class="scene-intro">Perjalanan kami di Pemrograman Antarmuka Pengguna bukan cuma soal menulis kode, tapi juga memahami proses di balik terbentuknya sebuah aplikasi web.</p>
-          <blockquote class="journey-quote">Sedikit demi sedikit, satu teknologi membawa kami ke teknologi berikutnya.</blockquote>
+          <p class="eyebrow">CHAPTER 05 <span class="eyebrow-line"></span> FUNDAMENTAL CONCEPTS</p>
+          <h2>Dari Logika,<br/><em>ke Program Pertama.</em></h2>
+          <p class="scene-intro">Belajar pemrograman dimulai dari memahami masalah, merancang langkah penyelesaian, lalu menerjemahkannya menjadi instruksi yang terstruktur.</p>
+          <blockquote class="journey-quote">Sedikit demi sedikit, logika berubah menjadi solusi.</blockquote>
         </div>
         <div class="tech-timeline">
           <svg class="journey-route" viewBox="0 0 1000 380" preserveAspectRatio="none" aria-hidden="true"><path d="M55 100 C175 100 190 100 300 100 S430 100 485 100 S640 100 720 100 S900 100 950 145 S900 265 820 265 S670 265 585 265 S390 265 300 265 S120 265 55 265"/><g><path d="M178 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="178" cy="103" r="4"/><path d="M408 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="408" cy="103" r="4"/><path d="M795 89c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="795" cy="103" r="4"/><path d="M840 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="840" cy="265" r="4"/><path d="M585 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="585" cy="265" r="4"/><path d="M315 251c-8 0-14 6-14 14 0 10 14 24 14 24s14-14 14-24c0-8-6-14-14-14z"/><circle cx="315" cy="265" r="4"/></g></svg>
-          <article class="tech-step"><span class="tech-no">01</span><div><h3>HTML</h3><p>Mulai menyusun struktur dan fondasi sebuah halaman web.</p></div><span class="tech-kind" data-glyph="&lt;/&gt;">STRUCTURE</span></article>
-          <article class="tech-step"><span class="tech-no">02</span><div><h3>CSS</h3><p>Mengatur tampilan, layout, dan menjadikan halaman lebih menarik.</p></div><span class="tech-kind" data-glyph="✎">STYLE</span></article>
-          <article class="tech-step"><span class="tech-no">03</span><div><h3>JavaScript</h3><p>Membuat halaman menjadi interaktif dan responsif terhadap pengguna.</p></div><span class="tech-kind" data-glyph="{ }">INTERACTION</span></article>
-          <article class="tech-step"><span class="tech-no">04</span><div><h3>Next.js</h3><p>Melangkah ke framework modern untuk membangun aplikasi web yang lebih utuh.</p></div><span class="tech-kind" data-glyph="N">FRAMEWORK</span></article>
-          <article class="tech-step"><span class="tech-no">05</span><div><h3>TypeScript</h3><p>Mengenal sistem tipe yang membantu membuat kode lebih aman dan terarah.</p></div><span class="tech-kind" data-glyph="TS">TYPE SAFETY</span></article>
-          <article class="tech-step"><span class="tech-no">06</span><div><h3>TSX</h3><p>Menggabungkan kekuatan TypeScript dengan JSX untuk membangun komponen.</p></div><span class="tech-kind" data-glyph="▱">COMPONENTS</span></article>
+          <article class="tech-step"><span class="tech-no">01</span><div><h3>Algoritma</h3><p>Menyusun langkah penyelesaian masalah secara runtut.</p></div><span class="tech-kind" data-glyph="&lt;/&gt;">LOGIC</span></article>
+          <article class="tech-step"><span class="tech-no">02</span><div><h3>C++</h3><p>Bahasa pemrograman untuk menerjemahkan algoritma menjadi instruksi yang bisa dijalankan.</p></div><span class="tech-kind" data-glyph="C++">LANGUAGE</span></article>
+          <article class="tech-step"><span class="tech-no">03</span><div><h3>Java</h3><p>Bahasa pemrograman yang digunakan untuk membangun berbagai aplikasi.</p></div><span class="tech-kind" data-glyph="J">LANGUAGE</span></article>
+          <article class="tech-step"><span class="tech-no">04</span><div><h3>Object Oriented Programming</h3><p>Pendekatan pemrograman yang menyusun kode menggunakan objek dan kelas.</p></div><span class="tech-kind" data-glyph="OOP">OOP</span></article>
+          <article class="tech-step"><span class="tech-no">05</span><div><h3>Alice</h3><p>Mengenal konsep pemrograman melalui cerita dan animasi interaktif.</p></div><span class="tech-kind" data-glyph="A">LEARN</span></article>
+          <article class="tech-step"><span class="tech-no">06</span><div><h3>Greenfoot</h3><p>Belajar Java dengan membuat simulasi dan permainan interaktif.</p></div><span class="tech-kind" data-glyph="G">CREATE</span></article>
         </div>
-        <div class="deploy-strip"><img class="deploy-art" src="assets/image/people-study-collage.png" alt="Laptop menampilkan baris kode di samping buku dan tanaman"/><div class="deploy-copy"><span class="deploy-kicker">AND THEN,</span><h3>Hari Deployment.</h3></div><span class="deploy-divider"></span><p>Setelah mengembangkan dan menyempurnakan aplikasi, saatnya membawa hasil kerja kita ke dunia nyata melalui proses deployment.</p><div class="deploy-stamps"><span class="vercel-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 23 21H1z"/></svg> Vercel</span><span class="github-mark"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.72.54 1.46 0 1.05-.01 1.9-.01 2.16 0 .21.15.46.55.38A8.014 8.014 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg> GitHub</span></div></div>
+        <div class="deploy-strip"><img class="deploy-art" src="assets/image/people-study-collage.png" alt="Laptop menampilkan baris kode di samping buku dan tanaman"/><div class="deploy-copy"><span class="deploy-kicker">AND THEN,</span><h3>Program Berjalan.</h3></div><span class="deploy-divider"></span><p>Setelah logika dan instruksi tersusun, program dijalankan dan diperiksa untuk memastikan hasilnya sesuai harapan.</p></div>
       </section>
 
-      <section class="scene scene-people" data-scene="5" data-track="people" aria-label="The people behind the class" hidden>
+      <section class="scene scene-people" data-scene="9" data-track="people" aria-label="The people behind the class" hidden>
         <div class="people-hero">
         <div class="scene-heading">
-          <p class="eyebrow">CHAPTER 05 <span class="eyebrow-line"></span> THE PEOPLE BEHIND THE CLASS</p>
+          <p class="eyebrow">CHAPTER 06 <span class="eyebrow-line"></span> THE PEOPLE BEHIND THE CLASS</p>
           <h2>Orang-Orang di Balik<br/><em>Perjalanan Ini.</em></h2>
           <p class="scene-intro">Sebuah kelas juga dibentuk oleh orang-orang yang hadir di dalamnya—yang mengajar, membantu, bertanya, mencoba, dan ikut meramaikan suasana.</p>
         </div>
         <figure class="people-art-wrap"><img class="people-hero-art" src="assets/image/people-study-collage.png" alt="Laptop, buku pemrograman, tanaman, dan secangkir kopi" /><span class="people-book-labels" aria-hidden="true"><i>HTML</i><i>CSS</i><i>JavaScript</i><i>Next.js</i><i>TypeScript</i><i>TSX</i></span></figure>
         </div>
-        <div class="lecturer-line"><span class="lecturer-ribbon">LECTURER</span><div><h3 id="lecturer-name">Irvan Lewenusa</h3><p>Dosen Pengampu — Pemrograman Antarmuka Pengguna</p></div><span class="lecturer-cap" aria-hidden="true">⌂</span></div>
+        <div class="lecturer-line"><figure class="lecturer-portrait"><img src="assets/image/pakdarius.jpg" alt="Pak Darius Andana Haris mengajar di depan kelas"/><figcaption>THE LECTURER</figcaption></figure><div class="lecturer-copy"><span class="lecturer-ribbon">THE MASTERMIND BEHIND THIS CLASS</span><h3 id="lecturer-name">Darius Andana Haris</h3><p>Dosen Pengampu — Fundamental Programming</p><span class="lecturer-credit">GJ2627 · TK13028 · TI B 26</span></div><span class="lecturer-cap" aria-hidden="true">⌂</span></div>
         <div id="assistant-profiles" class="assistant-profiles"></div>
         <details class="assistant-role-note"><summary>Behind the class</summary><p>Di kelas, peran asisten dosen bukan cuma menyampaikan materi. Ada error yang perlu dibantu cari solusinya, pertanyaan yang masuk lewat chat, instruksi praktikum yang perlu dipastikan, dan banyak hal kecil yang membuat proses belajar tetap berjalan.</p></details>
       </section>
 
-      <section class="scene scene-rollcall" data-scene="6" data-track="rollcall" aria-label="47 names, one class" hidden>
+      <section class="scene scene-rollcall" data-scene="10" data-track="rollcall" aria-label="Daftar mahasiswa TI B angkatan 26" hidden>
         <div class="rollcall-top">
-          <p class="eyebrow">CHAPTER 06 <span class="eyebrow-line"></span> THE ROLL CALL</p>
-          <h2>47 Names.<br/><em>One Class.</em></h2>
+          <p class="eyebrow">CHAPTER 07 <span class="eyebrow-line"></span> THE ROLL CALL</p>
+          <h2>Teman-Teman TI B 26.<br/><em>Satu Kelas.</em></h2>
           <p class="scene-intro">Sebelum halaman ini ditutup, mari sebut satu per satu orang yang menjadi bagian dari cerita ini.</p>
-          <img class="rollcall-art" src="assets/image/rollcall-collage.png" alt="Buku kelas, tanaman hijau, dan foto ruang komputer SI A 25" />
-          <span class="rollcall-note">SI A 25 ♡</span>
+          <img class="rollcall-art" src="assets/image/rollcall-collage.png" alt="Buku kelas dan tanaman hijau untuk mengenang mahasiswa TI B angkatan 26" />
+          <span class="rollcall-note">TI B 26 ♡</span>
           <div class="rollcall-controls"><span id="rollcall-status">SIAP UNTUK MULAI</span><button id="rollcall-start" class="button button-small" type="button">⤨ &nbsp; Putar Ulang <span>→</span></button><button id="rollcall-skip" class="text-button" type="button">Tampilkan Semua</button></div>
         </div>
         <div class="rollcall-list-wrap"><div class="rollcall-columns"><span>NIM</span><span>NAMA</span></div><div id="rollcall-list" class="rollcall-list" aria-live="polite"></div></div>
-        <div class="rollcall-end" id="rollcall-end"><span>47 / 47</span><strong>Everyone has a place in this chapter.</strong></div>
-        <div class="scene-footnote"><span>THE PEOPLE OF SI A 25</span><span>IN THE ORDER OF THEIR NIM</span></div>
+        <div class="rollcall-end" id="rollcall-end"><span>41 / 41</span><strong>Everyone has a place in this chapter.</strong></div>
+        <div class="scene-footnote"><span>THE PEOPLE OF TI B 26</span><span>IN THE ORDER OF THEIR NIM</span></div>
       </section>
 
-      <section class="scene scene-message-index" data-scene="7" data-track="messages" aria-label="Messages to remember" hidden>
+      <section class="scene scene-message-index" data-scene="11" data-track="messages" aria-label="Messages to remember" hidden>
         <div class="scene-heading">
-          <p class="eyebrow">CHAPTER 07 <span class="eyebrow-line"></span> MESSAGES TO REMEMBER</p>
+          <p class="eyebrow">CHAPTER 08 <span class="eyebrow-line"></span> MESSAGES TO REMEMBER</p>
           <h2>A few words,<br/><em>from all of us.</em></h2>
           <p class="scene-intro">Tiga ruang kecil untuk menyimpan pesan dari para asisten dan seluruh kelas.</p>
         </div>
         <div class="message-chapters">
-          <article><span class="note-index">01 / A PERSONAL NOTE</span><h3>From Francesco</h3><p>Satu pesan untuk kelas yang membuat semester ini terasa berbeda.</p><span class="message-chapter-mark">F.</span></article>
-          <article><span class="note-index">02 / A PERSONAL NOTE</span><h3>From Cathrine</h3><p>Cerita dan ucapan terima kasih dari Cathrine untuk SI A 25.</p><span class="message-chapter-mark">C.</span></article>
-          <article><span class="note-index">03 / THE CLASS</span><h3>From the class</h3><p>Satu atau dua kata, lalu kesan-pesan dari seluruh kelas.</p><span class="message-chapter-mark">SI A</span></article>
+          <article><span class="note-index">01 / A PERSONAL NOTE</span><h3>From Moses</h3><p>Cerita dan ucapan terima kasih dari Moses untuk TI B.</p><span class="message-chapter-mark">M.</span></article>
+          <article><span class="note-index">02 / A PERSONAL NOTE</span><h3>From Francesco</h3><p>Satu pesan untuk kelas yang membuat semester ini terasa berbeda.</p><span class="message-chapter-mark">F.</span></article>
+          <article><span class="note-index">03 / THE CLASS</span><h3>From the class</h3><p>Satu atau dua kata, lalu kesan-pesan dari seluruh kelas.</p><span class="message-chapter-mark">TI B 26</span></article>
         </div>
         <div class="scene-footnote"><span>THREE NOTES, MANY VOICES</span><span>THE STORY IS BETTER WHEN SHARED</span></div>
       </section>
 
-      <section class="scene scene-letter scene-letter-francesco" data-scene="8" data-track="messages" aria-label="A note from Francesco" hidden>
-        <div class="letter-heading"><p class="eyebrow">CHAPTER 08 <span class="eyebrow-line"></span> FROM FRANCESCO</p><h2>Untuk SI A 25,<br/><em>dari Francesco.</em></h2><p class="scene-intro">Satu ruang untuk pesan yang ingin Francesco sampaikan langsung kepada kelas.</p></div>
+      <section class="scene scene-letter scene-letter-moses" data-scene="12" data-track="messages" aria-label="A note from Moses" hidden>
+        <div class="letter-heading"><p class="eyebrow">CHAPTER 09 <span class="eyebrow-line"></span> FROM MOSES</p><h2>Untuk TI B 26,<br/><em>dari Moses.</em></h2><p class="scene-intro">Satu ruang untuk pesan dan kenangan Moses bersama kelas.</p></div>
+        <article class="letter-paper"><span class="letter-stamp">A NOTE FOR THE CLASS</span><div id="moses-message" class="personal-message">Ruang untuk pesan Moses.</div><div class="letter-signature"><span>Salam sayang,</span><strong>Moses Marvian Asata</strong></div></article>
+        <div class="letter-margin-note">TERIMA KASIH<br/>UNTUK CERITANYA</div>
+        <div class="scene-footnote"><span>MOSES MARVIAN ASATA</span><span>WITH GRATITUDE</span></div>
+      </section>
+
+      <section class="scene scene-letter scene-letter-francesco" data-scene="13" data-track="messages" aria-label="A note from Francesco" hidden>
+        <div class="letter-heading"><p class="eyebrow">CHAPTER 10 <span class="eyebrow-line"></span> FROM FRANCESCO</p><h2>Untuk TI B 26,<br/><em>dari Francesco.</em></h2><p class="scene-intro">Satu ruang untuk pesan yang ingin Francesco sampaikan langsung kepada kelas.</p></div>
         <article class="letter-paper"><span class="letter-stamp">A NOTE FOR THE CLASS</span><div id="francesco-message" class="personal-message">Ruang untuk pesan Francesco.</div><div class="letter-signature"><span>Dengan hangat,</span><strong>Francesco Alexander</strong></div></article>
         <div class="letter-margin-note">SATU SEMESTER<br/>YANG BERARTI</div>
         <div class="scene-footnote"><span>FRANCESCO ALEXANDER</span><span>WITH GRATITUDE</span></div>
       </section>
 
-      <section class="scene scene-letter scene-letter-cathrine" data-scene="9" data-track="messages" aria-label="A note from Cathrine" hidden>
-        <div class="letter-heading"><p class="eyebrow">CHAPTER 09 <span class="eyebrow-line"></span> FROM CATHRINE</p><h2>Untuk SI A 25,<br/><em>dari Cathrine.</em></h2><p class="scene-intro">Satu ruang untuk pesan dan kenangan Cathrine bersama kelas.</p></div>
-        <article class="letter-paper"><span class="letter-stamp">A NOTE FOR THE CLASS</span><div id="cathrine-message" class="personal-message">Ruang untuk pesan Cathrine.</div><div class="letter-signature"><span>Salam sayang,</span><strong>Cathrine Sandrina</strong></div></article>
-        <div class="letter-margin-note">TERIMA KASIH<br/>UNTUK CERITANYA</div>
-        <div class="scene-footnote"><span>CATHRINE SANDRINA</span><span>WITH GRATITUDE</span></div>
-      </section>
-
-      <section class="scene scene-class-messages" data-scene="10" data-track="messages" aria-label="Messages from the class" hidden>
-        <div class="class-message-heading"><p class="eyebrow">CHAPTER 10 <span class="eyebrow-line"></span> FROM THE CLASS</p><h2>SI A 25,<br/><em>in your own words.</em></h2><p class="scene-intro">Kalau harus mendeskripsikan kelas Pemrograman Antarmuka Pengguna dalam satu atau dua kata, apa yang paling kamu ingat?</p></div>
-        <aside class="class-qr-panel"><div><span class="note-index">SCAN TO ADD YOUR WORDS</span><h3>Deskripsikan kelas dalam 1–3 kata.</h3><p>Scan QR untuk kirim jawaban lewat Mentimeter Word Cloud.</p><a id="message-collection-link" class="button button-outline is-disabled" href="#" target="_blank" rel="noopener">Buka Mentimeter <span>↗</span></a></div><a id="qr-frame-link" class="qr-frame class-qr-frame" href="#" target="_blank" rel="noopener" aria-label="QR code Mentimeter untuk mengirim kata dan pesan" aria-disabled="true"><span class="qr-placeholder" id="qr-placeholder"><span class="qr-placeholder-icon">▦</span><b>QR MENTIMETER</b><small>Tempel gambar QR di config.js</small></span><img id="qr-image" alt="QR code Mentimeter untuk kelas SI A 25" hidden /></a></aside>
+      <section class="scene scene-class-messages" data-scene="14" data-track="messages" aria-label="Messages from the class" hidden>
+        <div class="class-message-heading"><p class="eyebrow">CHAPTER 11 <span class="eyebrow-line"></span> FROM THE CLASS</p><h2>TI B 26,<br/><em>in your own words.</em></h2><p class="scene-intro">Kalau harus mendeskripsikan kelas Fundamental Programming dalam satu atau dua kata, apa yang paling kamu ingat?</p></div>
+        <aside class="class-qr-panel"><div><span class="note-index">SCAN TO ADD YOUR WORDS</span><h3>Deskripsikan kelas dalam 1–5 kata.</h3><p>Scan QR untuk kirim jawaban lewat Mentimeter Word Cloud.</p><a id="message-collection-link" class="button button-outline is-disabled" href="#" target="_blank" rel="noopener">Buka Mentimeter <span>↗</span></a></div><a id="qr-frame-link" class="qr-frame class-qr-frame" href="#" target="_blank" rel="noopener" aria-label="QR code Mentimeter untuk mengirim kata dan pesan" aria-disabled="true"><span class="qr-placeholder" id="qr-placeholder"><span class="qr-placeholder-icon">▦</span><b>QR MENTIMETER</b><small>Tempel gambar QR di config.js</small></span><img id="qr-image" alt="QR code Mentimeter untuk kelas TI B angkatan 26" hidden /></a></aside>
         <figure class="final-photo-frame class-mentimeter-frame">
-          <div class="photo-placeholder class-mentimeter-placeholder" id="mentimeter-placeholder"><span class="photo-cross">✳</span><b>MENTIMETER WORD CLOUD</b><small>Screenshot hasil jawaban kelas akan ditaruh di frame ini.</small><span class="photo-placeholder-footer">ADD IMAGE PATH IN CONFIG.JS</span></div>
-          <img id="mentimeter-photo" alt="Hasil Mentimeter Word Cloud tentang kelas SI A 25" hidden />
-          <figcaption>SI A 25 · IN OUR OWN WORDS</figcaption>
+          <div class="photo-placeholder class-mentimeter-placeholder" id="mentimeter-placeholder"><b>MENTIMETER WORD CLOUD</b><small>Screenshot hasil jawaban kelas akan ditaruh di frame ini.</small><span class="photo-placeholder-footer">ADD IMAGE PATH IN CONFIG.JS</span></div>
+          <img id="mentimeter-photo" alt="Hasil Mentimeter Word Cloud tentang kelas TI B angkatan 26" hidden />
+          <figcaption>TI B 26 · IN OUR OWN WORDS</figcaption>
         </figure>
         <details class="class-message-board"><summary><span class="note-index">KESAN &amp; PESAN</span><strong>Yang ingin kalian tinggalkan.</strong><span class="board-caption">BUKA DINDING PESAN</span></summary><div id="class-message-wall" class="class-message-wall"></div></details>
-        <div class="scene-footnote"><span>THANK YOU FOR SHARING YOUR WORDS</span><span>SI A 25 · 2025</span></div>
+        <div class="scene-footnote"><span>THANK YOU FOR SHARING YOUR WORDS</span><span>TI B 26</span></div>
       </section>
 
-      <section class="scene scene-instagram" data-scene="11" data-track="finale" aria-label="Connect on Instagram" hidden>
+      <section class="scene scene-instagram" data-scene="15" data-track="finale" aria-label="Connect on Instagram" hidden>
         <div class="instagram-heading">
-          <p class="eyebrow">CHAPTER 11 <span class="eyebrow-line"></span> KEEP IN TOUCH</p>
+          <p class="eyebrow">CHAPTER 12 <span class="eyebrow-line"></span> KEEP IN TOUCH</p>
           <h2>Ceritanya selesai,<br/><em>connect-nya lanjut.</em></h2>
-          <p class="scene-intro">Kalau mau tetap terhubung setelah kelas ini, follow kami di Instagram. Sampai ketemu di cerita berikutnya.</p>
+          <p class="scene-intro">Kalau mau tetap terhubung setelah kelas ini, kamu bisa menyapa Francesco di Instagram. Sampai ketemu di cerita berikutnya.</p>
         </div>
         <div class="instagram-profiles">
           <a class="instagram-profile" href="https://www.instagram.com/francesco.alx/" target="_blank" rel="noopener noreferrer" aria-label="Follow Francesco di Instagram, @francesco.alx">
             <span class="instagram-photo-wrap"><img src="assets/image/igfran.jpeg" alt="Foto Instagram Francesco" loading="lazy" /><span class="instagram-photo-tag">YOUR ASDOS</span></span>
             <span class="instagram-profile-info"><span class="instagram-profile-name">Francesco Alexander</span><span class="instagram-handle">@francesco.alx <span aria-hidden="true">↗</span></span></span>
           </a>
-          <a class="instagram-profile instagram-profile-cathrine" href="https://www.instagram.com/cathrine_s_a/" target="_blank" rel="noopener noreferrer" aria-label="Follow Cathrine di Instagram, @cathrine_s_a">
-            <span class="instagram-photo-wrap"><img src="assets/image/igcath.jpeg" alt="Foto Instagram Cathrine" loading="lazy" /><span class="instagram-photo-tag">YOUR ASDOS</span></span>
-            <span class="instagram-profile-info"><span class="instagram-profile-name">Cathrine Sandrina</span><span class="instagram-handle">@cathrine_s_a <span aria-hidden="true">↗</span></span></span>
+          <a class="instagram-profile instagram-profile-moses" href="https://www.instagram.com/mosesmavy/" target="_blank" rel="noopener noreferrer" aria-label="Follow Moses di Instagram, @mosesmavy">
+            <span class="instagram-photo-wrap"><img src="assets/image/igmoses.jpeg" alt="Foto Instagram Moses Marvian Asata" loading="lazy" /><span class="instagram-photo-tag">YOUR ASDOS</span></span>
+            <span class="instagram-profile-info"><span class="instagram-profile-name">Moses Marvian Asata</span><span class="instagram-handle">@mosesmavy <span aria-hidden="true">↗</span></span></span>
           </a>
         </div>
-        <div class="instagram-note"><span class="instagram-note-mark">@</span><span>ONE CLASS, MANY STORIES.<br/><em>Let’s keep in touch.</em></span><span class="instagram-note-caption">SI A 25 · 2025</span></div>
-        <div class="scene-footnote"><span>FIND US AFTER THE LAST CHAPTER</span><span>FRANCESCO × CATHRINE</span></div>
+        <div class="instagram-note"><span class="instagram-note-mark">@</span><span>ONE CLASS, MANY STORIES.<br/><em>Let’s keep in touch.</em></span><span class="instagram-note-caption">TI B 26</span></div>
+        <div class="scene-footnote"><span>FIND US AFTER THE LAST CHAPTER</span><span>FRANCESCO × MOSES</span></div>
       </section>
 
-      <section class="scene scene-final" data-scene="12" data-track="finale" aria-label="The last frame" hidden>
-        <div class="final-topline"><span>THE LAST CHAPTER · FINAL FRAME</span><span>SI A 25 / FOREVER IN THE ARCHIVE</span></div>
+      <section class="scene scene-final" data-scene="16" data-track="finale" aria-label="The last frame" hidden>
+        <div class="final-topline"><span>THE LAST CHAPTER · FINAL FRAME</span><span>TI B 26 / FOREVER IN THE ARCHIVE</span></div>
         <div class="final-heading"><p class="eyebrow">ONE LAST THING BEFORE WE GO</p><h2>The Last<br/><em>Frame.</em></h2><p>Semua cerita tadi punya satu kesamaan: ada orang-orang yang menjalaninya bersama.</p></div>
         <figure class="final-photo-frame" id="final-photo-frame">
-          <div class="photo-placeholder" id="photo-placeholder"><span class="photo-cross">✳</span><b>OUR ONE LAST PICTURE</b><small>Satu foto SI A 25 akan diletakkan di sini.</small><span class="photo-placeholder-footer">DROP THE CLASS PHOTO HERE LATER</span></div>
-          <img id="final-photo" alt="Foto kenangan bersama SI A 25" hidden />
-          <figcaption>SI A 25 · THE LAST CHAPTER</figcaption>
+          <div class="photo-placeholder" id="photo-placeholder"><b>OUR ONE LAST PICTURE</b><small>Satu foto TI B akan diletakkan di sini.</small><span class="photo-placeholder-footer">DROP THE CLASS PHOTO HERE LATER</span></div>
+          <img id="final-photo" alt="Foto kenangan bersama TI B angkatan 26" hidden />
+          <figcaption>TI B 26 · THE LAST CHAPTER</figcaption>
         </figure>
-        <div class="final-signoff"><span>THANK YOU FOR BEING PART OF IT.</span><strong>See you in the next chapter.</strong><span>— FRANCESCO & CATHRINE</span></div>
+        <div class="final-signoff"><span>THANK YOU FOR BEING PART OF IT.</span><strong>See you in the next chapter.</strong><span>— FRANCESCO & MOSES</span></div>
         <button id="replay-button" class="text-button replay-button" type="button">↶ Ulangi perjalanan dari awal</button>
       </section>
     </main>
 
     <footer class="bottombar">
-      <button id="previous-button" class="text-button" type="button" disabled>← Sebelumnya</button>
+      <button id="previous-button" class="text-button global-nav-button global-nav-prev" type="button" disabled><span class="global-nav-arrow" aria-hidden="true">←</span><span><small>SEBELUMNYA</small><b id="previous-page-name">Opening</b></span></button>
       <div id="scene-dots" class="scene-dots" aria-label="Navigasi chapter"></div>
-      <button id="next-button" class="text-button next-control" type="button">Selanjutnya →</button>
+      <button id="next-button" class="text-button next-control global-nav-button global-nav-next" type="button"><span><small>SELANJUTNYA</small><b id="next-page-name">The unexpected beginning</b></span><span class="global-nav-arrow" aria-hidden="true">→</span></button>
     </footer>
   </div>
   <audio id="background-audio" preload="none" loop></audio>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <div id="photo-lightbox" class="photo-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto SI A 25">
+  <div id="photo-lightbox" class="photo-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto TI B angkatan 26">
     <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Tutup foto">Tutup ×</button>
     <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Foto sebelumnya">←</button>
-    <figure class="lightbox-figure"><img id="lightbox-image" alt="Foto kenangan SI A 25 ukuran penuh" /><figcaption id="lightbox-counter">1 / 3</figcaption></figure>
+    <figure class="lightbox-figure"><img id="lightbox-image" alt="Foto kenangan TI B ukuran penuh" /><figcaption id="lightbox-counter">1 / 3</figcaption></figure>
     <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Foto berikutnya">→</button>
   </div>
 </body>

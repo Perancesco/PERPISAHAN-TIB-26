@@ -1,213 +1,65 @@
-window.SIA25_CONTENT = {
-  "className": "SI A 25",
-  "course": "Pemrograman Antarmuka Pengguna",
-  "lecturer": "Irvan Lewenusa",
+window.TIB_CONTENT = {
+  "className": "TI B 26",
+  "course": "Fundamental Programming",
+  "lecturer": "Darius Andana Haris",
   "assistants": [
     {
       "name": "Francesco Alexander",
       "role": "Asisten Dosen",
-      "description": "Seseorang yang selalu berusaha membuat suasana kelas menjadi lebih hidup dan tidak membosankan. Senang menghadirkan sesuatu yang tidak terduga, mencoba berbagai ide, dan memberikan pengalaman belajar yang berbeda. Memiliki standar tinggi terhadap hasil pekerjaannya, dan selalu berusaha menghasilkan yang terbaik."
+      "description": "Asisten dosen Fundamental Programming yang mendampingi mahasiswa TI B"
     },
     {
-      "name": "Cathrine Sandrina",
+      "name": "Moses Marvian Asata",
       "role": "Asisten Dosen",
-      "description": "Sosok yang pintar, mandiri, dan memiliki kemampuan mengajar yang baik. Mampu menjelaskan sesuatu dengan jelas, tahu apa yang perlu dilakukan, dan menyampaikan sesuatu secara langsung ke intinya. Straight to the point, percaya diri, dan punya caranya sendiri untuk membuat semuanya berjalan."
+      "description": "Asisten dosen Fundamental Programming yang mendampingi mahasiswa TI B"
     }
   ],
   "roster": [
-    [
-      "825250001",
-      "GABRIELLA TAN"
-    ],
-    [
-      "825250002",
-      "DEIO CASTELLO SUJATI"
-    ],
-    [
-      "825250003",
-      "FELICIA RIVERA"
-    ],
-    [
-      "825250004",
-      "NICOLAS ANDERSON"
-    ],
-    [
-      "825250005",
-      "LEVINA INDAH LESTARI"
-    ],
-    [
-      "825250006",
-      "YOSUA TELAUMBANUA"
-    ],
-    [
-      "825250007",
-      "ALBERTA DAVIN"
-    ],
-    [
-      "825250008",
-      "MICHAEL MOSES SANTOSO"
-    ],
-    [
-      "825250009",
-      "GRESIA VALERINA WIDI"
-    ],
-    [
-      "825250010",
-      "NORWIN SUTRESNO"
-    ],
-    [
-      "825250011",
-      "CAYLA TJANDRAWINATA"
-    ],
-    [
-      "825250012",
-      "MUHAMMAD UBAIT DHAIFULLAH"
-    ],
-    [
-      "825250013",
-      "TRISTAN ANGELLO GUNAWAN"
-    ],
-    [
-      "825250014",
-      "VINCENT CHRISTOPHER CHANDRA"
-    ],
-    [
-      "825250015",
-      "HANNA NATHALIA"
-    ],
-    [
-      "825250016",
-      "LUIS MARCELLO"
-    ],
-    [
-      "825250017",
-      "VELICIA"
-    ],
-    [
-      "825250018",
-      "VIONANDA GINTING"
-    ],
-    [
-      "825250019",
-      "SEAN HILARION HALIM"
-    ],
-    [
-      "825250020",
-      "TESALONIKA MIRACLE MAKALEW"
-    ],
-    [
-      "825250021",
-      "MELVINA"
-    ],
-    [
-      "825250022",
-      "RIO"
-    ],
-    [
-      "825250023",
-      "TONY WIJAYA"
-    ],
-    [
-      "825250024",
-      "FARLA HAIRIMA"
-    ],
-    [
-      "825250025",
-      "JOLIN VIOENTY"
-    ],
-    [
-      "825250026",
-      "FELICIA"
-    ],
-    [
-      "825250027",
-      "SATYA PUTRA WIJAYA"
-    ],
-    [
-      "825250028",
-      "KELVIN"
-    ],
-    [
-      "825250029",
-      "CARLOSELLO HARIANTO"
-    ],
-    [
-      "825250030",
-      "KELVIN FRANCESCO WIJAYA"
-    ],
-    [
-      "825250031",
-      "KHALISSTA ARTEJA"
-    ],
-    [
-      "825250032",
-      "GARNETA AURIL TRIASIS"
-    ],
-    [
-      "825250033",
-      "JULIA TJAHAYA"
-    ],
-    [
-      "825250035",
-      "JUSTIN LEON"
-    ],
-    [
-      "825250037",
-      "HANSEL JOSHUA SANTOSO"
-    ],
-    [
-      "825250038",
-      "MICHELLE FRANSISCA BUDIMAN"
-    ],
-    [
-      "825250039",
-      "MARVELL FEIVEL ANTONIO SALIM"
-    ],
-    [
-      "825250040",
-      "VINCENT MAXIMILLIAN LIE"
-    ],
-    [
-      "825250123",
-      "BAGAS WISESA"
-    ],
-    [
-      "825250124",
-      "VIRDIL AKBAR FATHONY"
-    ],
-    [
-      "825250125",
-      "MARVINE SAPUTRA KURNIAWAN"
-    ],
-    [
-      "825250126",
-      "IMAM ARI NUGROHO"
-    ],
-    [
-      "825250127",
-      "DARRENN ALSTON MAXWELL KARTONO"
-    ],
-    [
-      "825250138",
-      "BAGAS ARYA PRATAMA"
-    ],
-    [
-      "825250139",
-      "VINCENT ALEXANDER"
-    ],
-    [
-      "825250140",
-      "EDGARD RATU TAGA"
-    ],
-    [
-      "825250153",
-      "RIZA ROSMERI"
-    ]
+    ["535240119", "JUSTIN WINTERSEN NAWI NGAN"],
+    ["535260045", "RHENIA RAHMAWATI"],
+    ["535260047", "CHANDRA MARVELL"],
+    ["535260048", "FATAH WIJAYA"],
+    ["535260049", "YOVAN JOSHUA PIONG"],
+    ["535260050", "YEMIMA GRACIA PUTRI"],
+    ["535260051", "MAXIMILLIAN ETHAN ZELIG"],
+    ["535260052", "ANDREW VINCENTIUS"],
+    ["535260053", "ALIEF HARIMURTI"],
+    ["535260054", "FYANCENT RICKYANTO"],
+    ["535260055", "VITA"],
+    ["535260056", "KEYSIA NATALIA"],
+    ["535260057", "PRINCESSA ZAREBA ANDANI"],
+    ["535260059", "CASSEY SEBASTIAN GOETAMA (RESPECT)"],
+    ["535260060", "BRYAN MATTHEW TJANDRA"],
+    ["535260061", "JESON ALEXANDER HUANG"],
+    ["535260062", "WILSON SANDJAJA"],
+    ["535260063", "R KNIGHT EZRA VALENTINUS P"],
+    ["535260064", "NANDA ASHOKA HALIM"],
+    ["535260065", "BRYAN WILSON SAMJAYA"],
+    ["535260066", "FLORENCIA IMANUELA"],
+    ["535260067", "NICHOLAS KENJI THAMIDA"],
+    ["535260068", "ALAN DARMASAPUTRA"],
+    ["535260069", "JESSLYN CECILIA"],
+    ["535260070", "ELBERT LIE"],
+    ["535260071", "NATHAN SHANE"],
+    ["535260072", "R O M I"],
+    ["535260073", "GERALD RYAN HARYANTO"],
+    ["535260074", "RICHARD MULIA"],
+    ["535260075", "JASSON WIJOYO"],
+    ["535260076", "SATYA PUTRA SUHENDI"],
+    ["535260079", "GLENN WILSON LIE"],
+    ["535260080", "KEN CARSON MORGAN"],
+    ["535260081", "KAREL BRUECKNER TRISTAN"],
+    ["535260082", "DIONISIUS CHRIST SHOSI MANAHIRA"],
+    ["535260083", "MOSES LIMANTO"],
+    ["535260084", "BRYAN REGAN YAP"],
+    ["535260085", "FELIX BREMANSILANA GINTING"],
+    ["535260086", "EVAN MANUEL GUNAWAN"],
+    ["535260087", "KERENHA FRANCTIN"],
+    ["535260088", "FERRISH DANENDRA"]
   ],
   "messages": {
-    "francesco": "SI A 25, kelas yang aku ga expect bakal ketemu lagi, terutama karena ini SI dan aku TI, tapi denger dapet kelas ini, aku langsung lega bisa dapet kelas yang udah ku kenal.\n\nTerimakasih atas keaktifan kalian selama matkul Pemrograman Antarmuka Pengguna ini 47 Mahasiswa, kelas paling kompak by a landslide, ku harap kalian bisa pertahanin kekompakan tersebut selamanya, ty for having me as your assistant lecturer for this semester again, dan semoga kalian suka web perpisahan iseng iseng ini hehe ( aku cuma tidur 2 jam ngerjain ini lol, didn't expect to take this long at all ngl tapi all worth at the end :v ), see u guys on top, maybe di dunia kerja :v",
-    "cathrine": "Good work SI A!! SI paling Aktif 😋 (dalam segi absensi dan interaksi). Kalian orang orang hebat dan asik, semoga kedepannya mata kuliahnya ga nyawit ya.\n\nThank you sudah menjadi mahasiswa aktif di sini teman teman, aku doakan kalian sukses. Walaupun kalian suka makan di lab 😡, kurang kurangin yah.\n\nSemangat melanjutkan 2 tahun kuliah lagi, kalian pasti bisa. Sukses UAS nya!\n\nJangan lupa baca baca dokumentasi bootstrapnya yaa! Dokumentasi adalah koentji ☝️🤓\n\nGoodluck di Softdev gess......"
+    "francesco": "Ok mungkin pertama tama aku mau say sorry kalo misalnya ada kata kata yang aneh atau plenger, i have been making this web and i am super tired, and i am writing this msg at 4 in the fucking morning, setelah selesai bikin webnya biar sekalian full dari hati, no cut no edit\n\nUntuk TI B 26, terimakasih sudah menjadi bagian dari perjalanan kelas fundamental programming ini, fundamental programming merupakan matkul paling seru yang pernah ku ajar, terima kasihh pak Darius\n\nTI B 26 jujur bagiku awalnya merupakan kelas yang lumayan hit or miss dimana aku suka beberapa dari kalian tapi aku ga suka beberapa juga dari kalian, tapi dari yang ku liat, beberapa orang yang ku ga suka ini, berjanji bakal benerin attitudenya and they actually did, ga ada laporan tentang kalian lagi, aku bangga banget ama kalian, dan sangat sangat aku acungi jempol banget, jadi i guess berubah jadi all hit lah :v\n\nThank you guys buat semua memorynya, semoga kalian suka webnya dan kebetulan ti b 26 bener bener jadi kelas paling terakhir yang ku ajar, dikarenakan semester depan aku dah magang dan bener bener ga mungkin bisa ngajar kelas manapun lagi (kecuali aku kalo ga dapet magang terus aku stupen.... jgn lah....), ty guys for the memories\n\nGood luck di uasnya semoga semua dapet nilai bagus, jangan sampe ketauan nyontek ama aku ya lol",
+    "moses": "Untuk kelas TI B 26, thank you sudah menjalani semester ini bersama-sama. Thank you juga sudah saling berkenalan dan have fun selama semester ini. Aku perhatikan beberapa dari kalian sudah benar-benar mengikuti kelas dengan baik, dan yang lain juga sudah menjalani dengan your best.\n\nUntuk kelas ini, yang paling ingin aku tekankan adalah: tolong jaga attitude kalian, baik kepada dosen, teman, maupun asisten dosen. Aku perhatikan beberapa dari kalian sering terlibat drama, atau attitude aslinya mulai terlihat. Tolong tinggalkan sikap yang kurang baik itu di semester ini dan jangan diulangi lagi, for your best.\n\nAnd tolong belajar cara zip file :v Thank you for having us. Kami, para asisten dosen Fundamental Programming, izin sign out."
   },
-  // Tambahkan pesan kelas dengan format: { "name": "Nama (opsional)", "text": "Isi pesan" }
   "classMessages": []
 };

@@ -1,6 +1,6 @@
-# SI A 25 — The Last Chapter
+# TI B 26 — The Last Chapter
 
-Website perpisahan SI A 25. Dibuat dengan HTML, CSS, dan JavaScript biasa.
+Website perpisahan TI B angkatan 26. Dibuat dengan HTML, CSS, dan JavaScript biasa.
 
 ## Menjalankan di komputer
 
@@ -9,7 +9,7 @@ Website perpisahan SI A 25. Dibuat dengan HTML, CSS, dan JavaScript biasa.
 3. Jalankan `npm run dev`.
 4. Buka `http://localhost:3000`.
 
-Password masuk: `SIA25PAP`.
+Password masuk: `TIBFUNDAMENTAL`.
 
 Website tidak membutuhkan instalasi package tambahan atau file `.env`.
 

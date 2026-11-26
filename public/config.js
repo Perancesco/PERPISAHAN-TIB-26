@@ -1,11 +1,11 @@
 /*
-  SI A 25 — konfigurasi aset.
+  TI B — konfigurasi aset.
   Isi path setelah file foto, QR, dan musik sudah tersedia.
   Isi path aset tanpa garis miring di depan agar bisa dibuka lokal dan online.
 */
-window.SIA25_CONFIG = {
-  photoPath: '', // contoh: 'assets/si-a25-last-frame.jpg'
-  mentimeterImagePath: '', // isi: 'assets/si-a25-mentimeter.png'
+window.TIB_CONFIG = {
+  photoPath: '', // contoh: 'assets/ti-b-last-frame.jpg'
+  mentimeterImagePath: '', // isi: 'assets/ti-b-mentimeter.png'
   qrImagePath: 'assets/image/mentimeterqr.png', // QR Mentimeter kelas
   messageCollectionUrl: '', // tempel link Mentimeter Word Cloud di sini
   musicTracks: {

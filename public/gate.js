@@ -5,9 +5,9 @@
   const error = document.querySelector('#login-error');
   const toggle = document.querySelector('#password-toggle');
   const submit = form.querySelector('button[type="submit"]');
-  const PASSWORD = 'SIA25PAP';
+  const PASSWORD = 'TIBFUNDAMENTAL';
 
-  if (localStorage.getItem('sia25-access') === 'yes') {
+  if (localStorage.getItem('tib-access') === 'yes') {
     window.location.replace('story.html');
     return;
   }
@@ -26,7 +26,7 @@
       error.textContent = 'Password belum tepat. Coba periksa lagi, ya.';
       return;
     }
-    localStorage.setItem('sia25-access', 'yes');
+    localStorage.setItem('tib-access', 'yes');
     window.location.href = 'story.html';
   });
 })();

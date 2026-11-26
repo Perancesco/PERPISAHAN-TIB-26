@@ -1,11 +1,19 @@
 (() => {
   'use strict';
 
-  const CONFIG = window.SIA25_CONFIG || {};
+  const CONFIG = window.TIB_CONFIG || {};
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const navTitleByClass = {
+    'scene-cover': 'Awal', 'scene-beginning': 'Cerita Awal', 'scene-classroom': 'TI B 26, Apa Adanya',
+    'scene-teachquest': 'TeachQuest', 'scene-blooket': 'Blooket', 'scene-quests': 'Quest Board', 'scene-sidequests': 'Sidequest Board', 'scene-curses': 'Curse Board',
+    'scene-journey': 'Fundamental Concepts', 'scene-people': 'Tim Pengajar', 'scene-rollcall': 'Daftar Mahasiswa',
+    'scene-message-index': 'Pesan untuk Diingat', 'scene-letter-francesco': 'Pesan Francesco',
+    'scene-letter-moses': 'Pesan Moses', 'scene-class-messages': 'Pesan dari Kelas',
+    'scene-instagram': 'Instagram', 'scene-final': 'Penutup'
+  };
 
-  const scenes = $$('.scene');
+  let scenes = $$('.scene');
   const audio = $('#background-audio');
   const musicToggle = $('#music-toggle');
   const volumeSlider = $('#music-volume');
@@ -18,7 +26,7 @@
   let toastTimer = null;
   let rollTimer = null;
   let rollStarted = false;
-  const savedVolume = localStorage.getItem('sia25-music-volume');
+  const savedVolume = localStorage.getItem('tib-music-volume');
   let musicVolume = savedVolume === null ? 0.35 : Math.min(1, Math.max(0, Number(savedVolume)));
   if (!Number.isFinite(musicVolume)) musicVolume = 0.35;
   audio.volume = musicVolume;
@@ -29,7 +37,7 @@
     audio.volume = musicVolume;
     volumeValue.value = `${volumeSlider.value}%`;
     volumeSlider.setAttribute('aria-valuetext', `${volumeSlider.value}%`);
-    localStorage.setItem('sia25-music-volume', String(musicVolume));
+    localStorage.setItem('tib-music-volume', String(musicVolume));
   });
 
   const trackMap = {
@@ -50,7 +58,7 @@
     })[char]);
   }
 
-  function loadContent() { return window.SIA25_CONTENT || null; }
+  function loadContent() { return window.TIB_CONTENT || null; }
 
   function renderContent() {
     if (!content) return;
@@ -61,7 +69,7 @@
       const initials = person.name.split(/\s+/).map((part) => part[0]).slice(0, 2).join('');
       return `
       <article class="assistant-profile">
-        <div class="profile-medallion profile-medallion-${index + 1}" aria-hidden="true"><span>${escapeHtml(initials)}</span><i></i><b>SI A · 25</b></div>
+        <div class="profile-medallion profile-medallion-${index + 1}" aria-hidden="true"><span>${escapeHtml(initials)}</span><i></i><b>${escapeHtml(content.className || 'TI B')}</b></div>
         <span class="note-index">0${index + 1} / ${escapeHtml(person.role || 'ASISTEN DOSEN')}</span>
         <h3>${escapeHtml(person.name)}</h3>
         <p>${escapeHtml(person.description)}</p>
@@ -70,7 +78,13 @@
     }).join('');
 
     const rosterRoot = $('#rollcall-list');
-    rosterRoot.innerHTML = (content.roster || []).map(([nim, name], index) => `
+    const roster = content.roster || [];
+    const rollcallScene = $('[data-scene="10"]');
+    if (!roster.length && rollcallScene) {
+      rollcallScene.remove();
+      scenes = scenes.filter((scene) => scene !== rollcallScene);
+    }
+    rosterRoot.innerHTML = roster.map(([nim, name], index) => `
       <div class="rollcall-entry" data-roll-index="${index}">
         <span class="nim">${escapeHtml(nim)}</span>
         <span class="student-name">${escapeHtml(name)}</span>
@@ -78,7 +92,7 @@
     `).join('');
 
     renderMessage('#francesco-message', content.messages?.francesco, 'Ruang untuk pesan Francesco.');
-    renderMessage('#cathrine-message', content.messages?.cathrine, 'Ruang untuk pesan Cathrine.');
+    renderMessage('#moses-message', content.messages?.moses, 'Ruang untuk pesan Moses Marvian Asata.');
     renderClassMessages(content.classMessages || []);
     configureImage('#final-photo', '#photo-placeholder', CONFIG.photoPath);
     configureImage('#mentimeter-photo', '#mentimeter-placeholder', CONFIG.mentimeterImagePath);
@@ -102,11 +116,11 @@
     const wall = $('#class-message-wall');
     if (!wall) return;
     const entries = (messages || []).map((entry) => typeof entry === 'string'
-      ? { name: 'SI A 25', text: entry }
-      : { name: entry?.name || 'SI A 25', text: String(entry?.text || '') }
+      ? { name: content.className || 'TI B', text: entry }
+      : { name: entry?.name || content.className || 'TI B', text: String(entry?.text || '') }
     ).filter((entry) => entry.text.trim());
     if (!entries.length) {
-      wall.innerHTML = '<article class="class-message-empty"><span class="quote-mark">“</span><p>Ruang untuk kesan dan pesan dari teman-teman SI A 25.</p><span>WORDS TO KEEP</span></article><article class="class-message-empty"><span class="quote-mark">“</span><p>Satu cerita kecil tentang kelas kita akan ditaruh di sini.</p><span>MEMORIES FROM THE CLASS</span></article>';
+      wall.innerHTML = '<article class="class-message-empty"><span class="quote-mark">“</span><p>Ruang untuk kesan dan pesan dari teman-teman TI B 26.</p><span>WORDS TO KEEP</span></article><article class="class-message-empty"><span class="quote-mark">“</span><p>Satu cerita kecil tentang kelas kita akan ditaruh di sini.</p><span>MEMORIES FROM THE CLASS</span></article>';
       return;
     }
     wall.innerHTML = entries.map((entry) => `<article class="class-message-card"><span class="quote-mark">“</span><p>${escapeHtml(entry.text)}</p><span class="class-message-author">${escapeHtml(entry.name)}</span></article>`).join('');
@@ -177,7 +191,14 @@
     $('#progress-fill').style.width = `${((activeScene + 1) / scenes.length) * 100}%`;
     $('#previous-button').disabled = activeScene === 0;
     $('#next-button').disabled = activeScene === scenes.length - 1;
-    $('#next-button').textContent = activeScene === scenes.length - 2 ? 'Lihat frame terakhir →' : 'Selanjutnya →';
+    const sceneTitle = (scene) => {
+      if (!scene) return '';
+      const knownClass = [...scene.classList].find((className) => navTitleByClass[className]);
+      return scene.dataset.navTitle || navTitleByClass[knownClass] || scene.getAttribute('aria-label')
+        || scene.querySelector('h2')?.textContent.replace(/\s+/g, ' ').trim() || 'Halaman';
+    };
+    $('#previous-page-name').textContent = sceneTitle(scenes[activeScene - 1]) || 'Awal';
+    $('#next-page-name').textContent = sceneTitle(scenes[activeScene + 1]) || 'Selesai';
     $$('.scene-dot').forEach((dot, index) => dot.classList.toggle('is-current', index === activeScene));
   }
 
@@ -204,8 +225,9 @@
     }
     switchSceneMusic();
 
-    if (activeScene === 6 && !rollStarted) startRollcall(false);
-    if (activeScene !== 6) $('#rollcall-status').textContent = 'SIAP UNTUK MULAI';
+    const isRollcallScene = scenes[activeScene]?.classList.contains('scene-rollcall');
+    if (isRollcallScene && !rollStarted) startRollcall(false);
+    if (!isRollcallScene) $('#rollcall-status').textContent = 'SIAP UNTUK MULAI';
   }
 
   $('#previous-button').addEventListener('click', () => setScene(activeScene - 1));
@@ -350,7 +372,7 @@
 
   $('#logout-button').addEventListener('click', async () => {
     stopMusic();
-    localStorage.removeItem('sia25-access');
+    localStorage.removeItem('tib-access');
     window.location.replace('index.html');
   });
 
@@ -415,7 +437,7 @@
   });
 
   function initializeArchive() {
-    if (localStorage.getItem('sia25-access') !== 'yes') {
+    if (localStorage.getItem('tib-access') !== 'yes') {
       window.location.replace('index.html');
       return;
     }
